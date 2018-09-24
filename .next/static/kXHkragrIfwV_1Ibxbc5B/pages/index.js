@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{197:function(n,e,t){__NEXT_REGISTER_PAGE("/",function(){return n.exports=t(198),{page:n.exports.default}})},198:function(n,e,t){"use strict";t.r(e);var o=t(10),r=t.n(o);e.default=function(){return r.a.createElement("div",null,"This is another welcome")}}},[[197,1,0]]]);
