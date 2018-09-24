@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^3.1.1",
+    "@material-ui/icons": "^3.0.1",
+    "next": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export && rm -rf _next && cp -r out/* . && rm -rf out",
+    "start": "next start",
+    "help": "next export -h"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-react": "^7.6.1"
+  },
+  "name": "prathameshnetake.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://prathameshnetake@github.com/prathameshnetake/prathameshnetake.github.io",
+  "author": "Prathamesh <prathamesh.netake@gmail.com>",
+  "license": "MIT"
+}
