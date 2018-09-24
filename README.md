@@ -1,1 +1,0 @@
-# prathameshnetake.github.io
