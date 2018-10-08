@@ -1,5 +1,14 @@
-import Navbar from "../components/Navbar.jsx";
+import React from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Navbar from "../components/Navbar/Navbar.jsx";
 
-export default () => (
-  <div><Navbar />sdad feel stupid Prthamesh</div>
-);
+function MyApp() {
+  return (
+    <React.Fragment>
+      <CssBaseline />
+      <Navbar />
+    </React.Fragment>
+  );
+}
+
+export default MyApp;

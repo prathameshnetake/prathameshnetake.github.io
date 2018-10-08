@@ -31,7 +31,7 @@ function ButtonAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="title" color="inherit" className={classes.grow}>
-            News
+            Dash Board
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
