@@ -38,7 +38,6 @@ class MyApp extends App {
           >
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
-            this will be the common one
             {/* Pass pageContext to the _document though the renderPage enhancer
                   to render collected styles on server side. */}
             <Component pageContext={this.pageContext} {...pageProps} />

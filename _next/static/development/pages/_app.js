@@ -29,7 +29,7 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["create
   palette: {
     primary: {
       light: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[300],
-      main: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[500],
+      main: "#f54767",
       dark: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[700]
     },
     secondary: {
@@ -37,6 +37,9 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["create
       main: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[500],
       dark: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[700]
     }
+  },
+  typography: {
+    fontFamily: "Open Sans"
   }
 });
 
@@ -18341,12 +18344,12 @@ function (_App) {
           lineNumber: 40
         },
         __self: this
-      }), "this will be the common one", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({
         pageContext: this.pageContext
       }, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 43
         },
         __self: this
       })))));

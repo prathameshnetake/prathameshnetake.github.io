@@ -19,14 +19,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "./node_modules/@material-ui/core/Toolbar/index.js");
 /* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/Typography/index.js");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/Button/index.js");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/IconButton/index.js");
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js");
-/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/Button/index.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Navbar/Navbar.jsx";
 
 
@@ -35,19 +29,35 @@ var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Navbar/N
 
 
 
-
-
-var styles = {
-  root: {
-    flexGrow: 1
-  },
-  grow: {
-    flexGrow: 1
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20
-  }
+var styles = function styles(theme) {
+  return {
+    root: {
+      flexGrow: 1
+    },
+    grow: {
+      flexGrow: 1
+    },
+    menuButton: {
+      marginLeft: -12,
+      marginRight: 20
+    },
+    appBar: {
+      backgroundColor: "transparent",
+      boxShadow: "none"
+    },
+    navList: {
+      display: "flex",
+      margin: 0,
+      padding: 0,
+      flexGrow: 1,
+      justifyContent: "flex-end"
+    },
+    navLink: {
+      margin: "0 1rem",
+      fontWeight: 600,
+      color: theme.palette.primary.main
+    }
+  };
 };
 
 function ButtonAppBar(props) {
@@ -56,54 +66,96 @@ function ButtonAppBar(props) {
     className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3___default.a, {
     position: "static",
+    className: classes.appBar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 42
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    className: classes.menuButton,
-    color: "inherit",
-    "aria-label": "Menu",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: classes.navList,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 43
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_8___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 44
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    variant: "title",
-    color: "inherit",
-    className: classes.grow,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: classes.navLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 45
     },
     __self: this
-  }, "Dash Board"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    color: "inherit",
+  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 47
     },
     __self: this
-  }, "Login"))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: classes.navLink,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: classes.navLink,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: classes.navLink,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "Experiance")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: classes.navLink,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, "Contact"))))));
 }
 
 ButtonAppBar.propTypes = {
@@ -295,23 +347,6 @@ function _inherits(subClass, superClass) {
 }
 
 module.exports = _inherits;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/inheritsLoose.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/inheritsLoose.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
-}
-
-module.exports = _inheritsLoose;
 
 /***/ }),
 
@@ -2535,213 +2570,6 @@ var _CssBaseline = _interopRequireDefault(__webpack_require__(/*! ./CssBaseline 
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/core/IconButton/IconButton.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@material-ui/core/IconButton/IconButton.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
-
-var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
-
-var _colorManipulator = __webpack_require__(/*! ../styles/colorManipulator */ "./node_modules/@material-ui/core/styles/colorManipulator.js");
-
-var _ButtonBase = _interopRequireDefault(__webpack_require__(/*! ../ButtonBase */ "./node_modules/@material-ui/core/ButtonBase/index.js"));
-
-var _helpers = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/utils/helpers.js");
-
-// @inheritedComponent ButtonBase
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      textAlign: 'center',
-      flex: '0 0 auto',
-      fontSize: theme.typography.pxToRem(24),
-      padding: 12,
-      borderRadius: '50%',
-      overflow: 'visible',
-      // Explicitly set the default value to solve a bug on IE11.
-      color: theme.palette.action.active,
-      transition: theme.transitions.create('background-color', {
-        duration: theme.transitions.duration.shortest
-      }),
-      '&:hover': {
-        backgroundColor: (0, _colorManipulator.fade)(theme.palette.action.active, theme.palette.action.hoverOpacity),
-        // Reset on touch devices, it doesn't add specificity
-        '@media (hover: none)': {
-          backgroundColor: 'transparent'
-        },
-        '&$disabled': {
-          backgroundColor: 'transparent'
-        }
-      },
-      '&$disabled': {
-        color: theme.palette.action.disabled
-      }
-    },
-
-    /* Styles applied to the root element if `color="inherit"`. */
-    colorInherit: {
-      color: 'inherit'
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      color: theme.palette.primary.main,
-      '&:hover': {
-        backgroundColor: (0, _colorManipulator.fade)(theme.palette.primary.main, theme.palette.action.hoverOpacity),
-        // Reset on touch devices, it doesn't add specificity
-        '@media (hover: none)': {
-          backgroundColor: 'transparent'
-        }
-      }
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      color: theme.palette.secondary.main,
-      '&:hover': {
-        backgroundColor: (0, _colorManipulator.fade)(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
-        // Reset on touch devices, it doesn't add specificity
-        '@media (hover: none)': {
-          backgroundColor: 'transparent'
-        }
-      }
-    },
-
-    /* Styles applied to the root element if `disabled={true}`. */
-    disabled: {},
-
-    /* Styles applied to the children container element. */
-    label: {
-      width: '100%',
-      display: 'flex',
-      alignItems: 'inherit',
-      justifyContent: 'inherit'
-    }
-  };
-};
-/**
- * Refer to the [Icons](/style/icons) section of the documentation
- * regarding the available icon options.
- */
-
-
-exports.styles = styles;
-
-function IconButton(props) {
-  var _classNames;
-
-  var children = props.children,
-      classes = props.classes,
-      className = props.className,
-      color = props.color,
-      disabled = props.disabled,
-      other = (0, _objectWithoutProperties2.default)(props, ["children", "classes", "className", "color", "disabled"]);
-  return _react.default.createElement(_ButtonBase.default, (0, _extends2.default)({
-    className: (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes["color".concat((0, _helpers.capitalize)(color))], color !== 'default'), (0, _defineProperty2.default)(_classNames, classes.disabled, disabled), _classNames), className),
-    centerRipple: true,
-    focusRipple: true,
-    disabled: disabled
-  }, other), _react.default.createElement("span", {
-    className: classes.label
-  }, children));
-}
-
-IconButton.propTypes =  true ? {
-  /**
-   * The icon element.
-   */
-  children: _propTypes.default.node,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css-api) below for more details.
-   */
-  classes: _propTypes.default.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * The color of the component. It supports those theme colors that make sense for this component.
-   */
-  color: _propTypes.default.oneOf(['default', 'inherit', 'primary', 'secondary']),
-
-  /**
-   * If `true`, the button will be disabled.
-   */
-  disabled: _propTypes.default.bool,
-
-  /**
-   * If `true`, the ripple will be disabled.
-   */
-  disableRipple: _propTypes.default.bool
-} : undefined;
-IconButton.defaultProps = {
-  color: 'default',
-  disabled: false
-};
-
-var _default = (0, _withStyles.default)(styles, {
-  name: 'MuiIconButton'
-})(IconButton);
-
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/IconButton/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@material-ui/core/IconButton/index.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _IconButton.default;
-  }
-});
-
-var _IconButton = _interopRequireDefault(__webpack_require__(/*! ./IconButton */ "./node_modules/@material-ui/core/IconButton/IconButton.js"));
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/core/Paper/Paper.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@material-ui/core/Paper/Paper.js ***!
@@ -2885,218 +2713,6 @@ var _Paper = _interopRequireDefault(__webpack_require__(/*! ./Paper */ "./node_m
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/core/SvgIcon/SvgIcon.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@material-ui/core/SvgIcon/SvgIcon.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
-
-var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
-
-var _helpers = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/utils/helpers.js");
-
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      userSelect: 'none',
-      width: '1em',
-      height: '1em',
-      display: 'inline-block',
-      fill: 'currentColor',
-      flexShrink: 0,
-      fontSize: 24,
-      transition: theme.transitions.create('fill', {
-        duration: theme.transitions.duration.shorter
-      })
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      color: theme.palette.primary.main
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      color: theme.palette.secondary.main
-    },
-
-    /* Styles applied to the root element if `color="action"`. */
-    colorAction: {
-      color: theme.palette.action.active
-    },
-
-    /* Styles applied to the root element if `color="error"`. */
-    colorError: {
-      color: theme.palette.error.main
-    },
-
-    /* Styles applied to the root element if `color="disabled"`. */
-    colorDisabled: {
-      color: theme.palette.action.disabled
-    },
-
-    /* Styles applied to the root element if `fontSize="inherit"`. */
-    fontSizeInherit: {
-      fontSize: 'inherit'
-    },
-
-    /* Styles applied to the root element if `fontSize="small"`. */
-    fontSizeSmall: {
-      fontSize: 20
-    },
-
-    /* Styles applied to the root element if `fontSize="large"`. */
-    fontSizeLarge: {
-      fontSize: 36
-    }
-  };
-};
-
-exports.styles = styles;
-
-function SvgIcon(props) {
-  var _classNames;
-
-  var children = props.children,
-      classes = props.classes,
-      className = props.className,
-      color = props.color,
-      Component = props.component,
-      fontSize = props.fontSize,
-      nativeColor = props.nativeColor,
-      titleAccess = props.titleAccess,
-      viewBox = props.viewBox,
-      other = (0, _objectWithoutProperties2.default)(props, ["children", "classes", "className", "color", "component", "fontSize", "nativeColor", "titleAccess", "viewBox"]);
-  return _react.default.createElement(Component, (0, _extends2.default)({
-    className: (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes["color".concat((0, _helpers.capitalize)(color))], color !== 'inherit'), (0, _defineProperty2.default)(_classNames, classes["fontSize".concat((0, _helpers.capitalize)(fontSize))], fontSize !== 'default'), _classNames), className),
-    focusable: "false",
-    viewBox: viewBox,
-    color: nativeColor,
-    "aria-hidden": titleAccess ? 'false' : 'true',
-    role: titleAccess ? 'img' : 'presentation'
-  }, other), children, titleAccess ? _react.default.createElement("title", null, titleAccess) : null);
-}
-
-SvgIcon.propTypes =  true ? {
-  /**
-   * Node passed into the SVG element.
-   */
-  children: _propTypes.default.node.isRequired,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css-api) below for more details.
-   */
-  classes: _propTypes.default.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * The color of the component. It supports those theme colors that make sense for this component.
-   * You can use the `nativeColor` property to apply a color attribute to the SVG element.
-   */
-  color: _propTypes.default.oneOf(['inherit', 'primary', 'secondary', 'action', 'error', 'disabled']),
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   */
-  component: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.func, _propTypes.default.object]),
-
-  /**
-   * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
-   */
-  fontSize: _propTypes.default.oneOf(['inherit', 'default', 'small', 'large']),
-
-  /**
-   * Applies a color attribute to the SVG element.
-   */
-  nativeColor: _propTypes.default.string,
-
-  /**
-   * Provides a human-readable title for the element that contains it.
-   * https://www.w3.org/TR/SVG-access/#Equivalent
-   */
-  titleAccess: _propTypes.default.string,
-
-  /**
-   * Allows you to redefine what the coordinates without units mean inside an SVG element.
-   * For example, if the SVG element is 500 (width) by 200 (height),
-   * and you pass viewBox="0 0 50 20",
-   * this means that the coordinates inside the SVG will go from the top left corner (0,0)
-   * to bottom right (50,20) and each unit will be worth 10px.
-   */
-  viewBox: _propTypes.default.string
-} : undefined;
-SvgIcon.defaultProps = {
-  color: 'inherit',
-  component: 'svg',
-  fontSize: 'default',
-  viewBox: '0 0 24 24'
-};
-SvgIcon.muiName = 'SvgIcon';
-
-var _default = (0, _withStyles.default)(styles, {
-  name: 'MuiSvgIcon'
-})(SvgIcon);
-
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/SvgIcon/index.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@material-ui/core/SvgIcon/index.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _SvgIcon.default;
-  }
-});
-
-var _SvgIcon = _interopRequireDefault(__webpack_require__(/*! ./SvgIcon */ "./node_modules/@material-ui/core/SvgIcon/SvgIcon.js"));
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/core/Toolbar/Toolbar.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@material-ui/core/Toolbar/Toolbar.js ***!
@@ -3228,295 +2844,6 @@ Object.defineProperty(exports, "default", {
 });
 
 var _Toolbar = _interopRequireDefault(__webpack_require__(/*! ./Toolbar */ "./node_modules/@material-ui/core/Toolbar/Toolbar.js"));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/Typography/Typography.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@material-ui/core/Typography/Typography.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
-
-var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
-
-var _helpers = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/utils/helpers.js");
-
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      display: 'block',
-      margin: 0
-    },
-
-    /* Styles applied to the root element if `variant="display4"`. */
-    display4: theme.typography.display4,
-
-    /* Styles applied to the root element if `variant="display3"`. */
-    display3: theme.typography.display3,
-
-    /* Styles applied to the root element if `variant="display2"`. */
-    display2: theme.typography.display2,
-
-    /* Styles applied to the root element if `variant="display1"`. */
-    display1: theme.typography.display1,
-
-    /* Styles applied to the root element if `variant="headline"`. */
-    headline: theme.typography.headline,
-
-    /* Styles applied to the root element if `variant="title"`. */
-    title: theme.typography.title,
-
-    /* Styles applied to the root element if `variant="subheading"`. */
-    subheading: theme.typography.subheading,
-
-    /* Styles applied to the root element if `variant="body2"`. */
-    body2: theme.typography.body2,
-
-    /* Styles applied to the root element if `variant="body1"`. */
-    body1: theme.typography.body1,
-
-    /* Styles applied to the root element if `variant="caption"`. */
-    caption: theme.typography.caption,
-
-    /* Styles applied to the root element if `variant="button"`. */
-    button: theme.typography.button,
-
-    /* Styles applied to the root element if `variant="srOnly"`. Only accessible to screen readers. */
-    srOnly: {
-      position: 'absolute',
-      height: 1,
-      width: 1,
-      overflow: 'hidden'
-    },
-
-    /* Styles applied to the root element if `align="left"`. */
-    alignLeft: {
-      textAlign: 'left'
-    },
-
-    /* Styles applied to the root element if `align="center"`. */
-    alignCenter: {
-      textAlign: 'center'
-    },
-
-    /* Styles applied to the root element if `align="right"`. */
-    alignRight: {
-      textAlign: 'right'
-    },
-
-    /* Styles applied to the root element if `align="justify"`. */
-    alignJustify: {
-      textAlign: 'justify'
-    },
-
-    /* Styles applied to the root element if `align="nowrap"`. */
-    noWrap: {
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      whiteSpace: 'nowrap'
-    },
-
-    /* Styles applied to the root element if `gutterBottom={true}`. */
-    gutterBottom: {
-      marginBottom: '0.35em'
-    },
-
-    /* Styles applied to the root element if `paragraph={true}`. */
-    paragraph: {
-      marginBottom: 16
-    },
-
-    /* Styles applied to the root element if `color="inherit"`. */
-    colorInherit: {
-      color: 'inherit'
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      color: theme.palette.primary.main
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      color: theme.palette.secondary.main
-    },
-
-    /* Styles applied to the root element if `color="textPrimary"`. */
-    colorTextPrimary: {
-      color: theme.palette.text.primary
-    },
-
-    /* Styles applied to the root element if `color="textSecondary"`. */
-    colorTextSecondary: {
-      color: theme.palette.text.secondary
-    },
-
-    /* Styles applied to the root element if `color="error"`. */
-    colorError: {
-      color: theme.palette.error.main
-    }
-  };
-};
-
-exports.styles = styles;
-
-function Typography(props) {
-  var _classNames;
-
-  var align = props.align,
-      classes = props.classes,
-      classNameProp = props.className,
-      color = props.color,
-      componentProp = props.component,
-      gutterBottom = props.gutterBottom,
-      headlineMapping = props.headlineMapping,
-      noWrap = props.noWrap,
-      paragraph = props.paragraph,
-      variant = props.variant,
-      other = (0, _objectWithoutProperties2.default)(props, ["align", "classes", "className", "color", "component", "gutterBottom", "headlineMapping", "noWrap", "paragraph", "variant"]);
-  var className = (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes[variant], variant !== 'inherit'), (0, _defineProperty2.default)(_classNames, classes["color".concat((0, _helpers.capitalize)(color))], color !== 'default'), (0, _defineProperty2.default)(_classNames, classes.noWrap, noWrap), (0, _defineProperty2.default)(_classNames, classes.gutterBottom, gutterBottom), (0, _defineProperty2.default)(_classNames, classes.paragraph, paragraph), (0, _defineProperty2.default)(_classNames, classes["align".concat((0, _helpers.capitalize)(align))], align !== 'inherit'), _classNames), classNameProp);
-  var Component = componentProp || (paragraph ? 'p' : headlineMapping[variant]) || 'span';
-  return _react.default.createElement(Component, (0, _extends2.default)({
-    className: className
-  }, other));
-}
-
-Typography.propTypes =  true ? {
-  /**
-   * Set the text-align on the component.
-   */
-  align: _propTypes.default.oneOf(['inherit', 'left', 'center', 'right', 'justify']),
-
-  /**
-   * The content of the component.
-   */
-  children: _propTypes.default.node,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css-api) below for more details.
-   */
-  classes: _propTypes.default.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * The color of the component. It supports those theme colors that make sense for this component.
-   */
-  color: _propTypes.default.oneOf(['default', 'error', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary']),
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   * By default, it maps the variant to a good default headline component.
-   */
-  component: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.func, _propTypes.default.object]),
-
-  /**
-   * If `true`, the text will have a bottom margin.
-   */
-  gutterBottom: _propTypes.default.bool,
-
-  /**
-   * We are empirically mapping the variant property to a range of different DOM element types.
-   * For instance, h1 to h6. If you wish to change that mapping, you can provide your own.
-   * Alternatively, you can use the `component` property.
-   */
-  headlineMapping: _propTypes.default.object,
-
-  /**
-   * If `true`, the text will not wrap, but instead will truncate with an ellipsis.
-   */
-  noWrap: _propTypes.default.bool,
-
-  /**
-   * If `true`, the text will have a bottom margin.
-   */
-  paragraph: _propTypes.default.bool,
-
-  /**
-   * Applies the theme typography styles.
-   */
-  variant: _propTypes.default.oneOf(['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading', 'body2', 'body1', 'caption', 'button', 'srOnly', 'inherit'])
-} : undefined;
-Typography.defaultProps = {
-  align: 'inherit',
-  color: 'default',
-  gutterBottom: false,
-  headlineMapping: {
-    display4: 'h1',
-    display3: 'h1',
-    display2: 'h1',
-    display1: 'h1',
-    headline: 'h1',
-    title: 'h2',
-    subheading: 'h3',
-    body2: 'aside',
-    body1: 'p'
-  },
-  noWrap: false,
-  paragraph: false,
-  variant: 'body1'
-};
-
-var _default = (0, _withStyles.default)(styles, {
-  name: 'MuiTypography'
-})(Typography);
-
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/Typography/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@material-ui/core/Typography/index.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _Typography.default;
-  }
-});
-
-var _Typography = _interopRequireDefault(__webpack_require__(/*! ./Typography */ "./node_modules/@material-ui/core/Typography/Typography.js"));
 
 /***/ }),
 
@@ -6252,312 +5579,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/icons/Menu.js":
-/*!*************************************************!*\
-  !*** ./node_modules/@material-ui/icons/Menu.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
-
-var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("path", {
-  fill: "none",
-  d: "M0 0h24v24H0z"
-}), _react.default.createElement("path", {
-  d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-})), 'Menu');
-
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/node_modules/recompose/getDisplayName.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/node_modules/recompose/getDisplayName.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var getDisplayName = function getDisplayName(Component) {
-  if (typeof Component === 'string') {
-    return Component;
-  }
-
-  if (!Component) {
-    return undefined;
-  }
-
-  return Component.displayName || Component.name || 'Component';
-};
-
-var _default = getDisplayName;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/node_modules/recompose/pure.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/node_modules/recompose/pure.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _shouldUpdate = _interopRequireDefault(__webpack_require__(/*! ./shouldUpdate */ "./node_modules/@material-ui/icons/node_modules/recompose/shouldUpdate.js"));
-
-var _shallowEqual = _interopRequireDefault(__webpack_require__(/*! ./shallowEqual */ "./node_modules/@material-ui/icons/node_modules/recompose/shallowEqual.js"));
-
-var _setDisplayName = _interopRequireDefault(__webpack_require__(/*! ./setDisplayName */ "./node_modules/@material-ui/icons/node_modules/recompose/setDisplayName.js"));
-
-var _wrapDisplayName = _interopRequireDefault(__webpack_require__(/*! ./wrapDisplayName */ "./node_modules/@material-ui/icons/node_modules/recompose/wrapDisplayName.js"));
-
-var pure = function pure(BaseComponent) {
-  var hoc = (0, _shouldUpdate.default)(function (props, nextProps) {
-    return !(0, _shallowEqual.default)(props, nextProps);
-  });
-
-  if (true) {
-    return (0, _setDisplayName.default)((0, _wrapDisplayName.default)(BaseComponent, 'pure'))(hoc(BaseComponent));
-  }
-
-  return hoc(BaseComponent);
-};
-
-var _default = pure;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/node_modules/recompose/setDisplayName.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/node_modules/recompose/setDisplayName.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _setStatic = _interopRequireDefault(__webpack_require__(/*! ./setStatic */ "./node_modules/@material-ui/icons/node_modules/recompose/setStatic.js"));
-
-var setDisplayName = function setDisplayName(displayName) {
-  return (0, _setStatic.default)('displayName', displayName);
-};
-
-var _default = setDisplayName;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/node_modules/recompose/setStatic.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/node_modules/recompose/setStatic.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var setStatic = function setStatic(key, value) {
-  return function (BaseComponent) {
-    /* eslint-disable no-param-reassign */
-    BaseComponent[key] = value;
-    /* eslint-enable no-param-reassign */
-
-    return BaseComponent;
-  };
-};
-
-var _default = setStatic;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/node_modules/recompose/shallowEqual.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/node_modules/recompose/shallowEqual.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _shallowEqual = _interopRequireDefault(__webpack_require__(/*! fbjs/lib/shallowEqual */ "./node_modules/fbjs/lib/shallowEqual.js"));
-
-var _default = _shallowEqual.default;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/node_modules/recompose/shouldUpdate.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/node_modules/recompose/shouldUpdate.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js"));
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _setDisplayName = _interopRequireDefault(__webpack_require__(/*! ./setDisplayName */ "./node_modules/@material-ui/icons/node_modules/recompose/setDisplayName.js"));
-
-var _wrapDisplayName = _interopRequireDefault(__webpack_require__(/*! ./wrapDisplayName */ "./node_modules/@material-ui/icons/node_modules/recompose/wrapDisplayName.js"));
-
-var shouldUpdate = function shouldUpdate(test) {
-  return function (BaseComponent) {
-    var factory = (0, _react.createFactory)(BaseComponent);
-
-    var ShouldUpdate =
-    /*#__PURE__*/
-    function (_Component) {
-      (0, _inheritsLoose2.default)(ShouldUpdate, _Component);
-
-      function ShouldUpdate() {
-        return _Component.apply(this, arguments) || this;
-      }
-
-      var _proto = ShouldUpdate.prototype;
-
-      _proto.shouldComponentUpdate = function shouldComponentUpdate(nextProps) {
-        return test(this.props, nextProps);
-      };
-
-      _proto.render = function render() {
-        return factory(this.props);
-      };
-
-      return ShouldUpdate;
-    }(_react.Component);
-
-    if (true) {
-      return (0, _setDisplayName.default)((0, _wrapDisplayName.default)(BaseComponent, 'shouldUpdate'))(ShouldUpdate);
-    }
-
-    return ShouldUpdate;
-  };
-};
-
-var _default = shouldUpdate;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/node_modules/recompose/wrapDisplayName.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/node_modules/recompose/wrapDisplayName.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _getDisplayName = _interopRequireDefault(__webpack_require__(/*! ./getDisplayName */ "./node_modules/@material-ui/icons/node_modules/recompose/getDisplayName.js"));
-
-var wrapDisplayName = function wrapDisplayName(BaseComponent, hocName) {
-  return hocName + "(" + (0, _getDisplayName.default)(BaseComponent) + ")";
-};
-
-var _default = wrapDisplayName;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _pure = _interopRequireDefault(__webpack_require__(/*! recompose/pure */ "./node_modules/@material-ui/icons/node_modules/recompose/pure.js"));
-
-var _SvgIcon = _interopRequireDefault(__webpack_require__(/*! @material-ui/core/SvgIcon */ "./node_modules/@material-ui/core/SvgIcon/index.js"));
-
-function createSvgIcon(path, displayName) {
-  var Icon = function Icon(props) {
-    return _react.default.createElement(_SvgIcon.default, props, path);
-  };
-
-  Icon.displayName = "".concat(displayName, "Icon");
-  Icon = (0, _pure.default)(Icon);
-  Icon.muiName = 'SvgIcon';
-  return Icon;
-}
-
-;
-var _default = createSvgIcon;
-exports.default = _default;
-
-/***/ }),
-
 /***/ "./node_modules/brcast/dist/brcast.es.js":
 /*!***********************************************!*\
   !*** ./node_modules/brcast/dist/brcast.es.js ***!
@@ -7079,82 +6100,6 @@ var deepmerge_1 = deepmerge;
 
 /* harmony default export */ __webpack_exports__["default"] = (deepmerge_1);
 
-
-/***/ }),
-
-/***/ "./node_modules/fbjs/lib/shallowEqual.js":
-/*!***********************************************!*\
-  !*** ./node_modules/fbjs/lib/shallowEqual.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- * 
- */
-
-/*eslint-disable no-self-compare */
-
-
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-/**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */
-function is(x, y) {
-  // SameValue algorithm
-  if (x === y) {
-    // Steps 1-5, 7-10
-    // Steps 6.b-6.e: +0 != -0
-    // Added the nonzero y check to make Flow happy, but it is redundant
-    return x !== 0 || y !== 0 || 1 / x === 1 / y;
-  } else {
-    // Step 6.a: NaN == NaN
-    return x !== x && y !== y;
-  }
-}
-
-/**
- * Performs equality by iterating through keys on an object and returning false
- * when any key has values which are not strictly equal between the arguments.
- * Returns true when the values of all keys are strictly equal.
- */
-function shallowEqual(objA, objB) {
-  if (is(objA, objB)) {
-    return true;
-  }
-
-  if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) {
-    return false;
-  }
-
-  var keysA = Object.keys(objA);
-  var keysB = Object.keys(objB);
-
-  if (keysA.length !== keysB.length) {
-    return false;
-  }
-
-  // Test for A's keys different from B.
-  for (var i = 0; i < keysA.length; i++) {
-    if (!hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-module.exports = shallowEqual;
 
 /***/ }),
 
