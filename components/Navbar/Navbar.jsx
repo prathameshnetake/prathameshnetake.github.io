@@ -6,12 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 
 const styles = theme => ({
-  root: {
-    flexGrow: 1
-  },
-  grow: {
-    flexGrow: 1
-  },
+  root: {},
   menuButton: {
     marginLeft: -12,
     marginRight: 20

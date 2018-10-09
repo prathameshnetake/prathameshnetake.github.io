@@ -39,7 +39,12 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["create
     }
   },
   typography: {
-    fontFamily: "Open Sans"
+    fontFamily: "Open Sans",
+    display4: {
+      fontFamily: "Raleway",
+      fontWeight: 700,
+      fontSize: "4rem"
+    }
   }
 });
 
