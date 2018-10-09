@@ -1,12 +1,12 @@
 import React from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Navbar from "../components/Navbar/Navbar.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 function MyApp() {
   return (
     <React.Fragment>
-      <CssBaseline />
       <Navbar />
+      <Footer />
     </React.Fragment>
   );
 }

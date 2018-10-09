@@ -30,7 +30,10 @@ const styles = theme => ({
   navLink: {
     margin: "0 1rem",
     fontWeight: 600,
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    "&:hover": {
+      background: "transparent"
+    }
   }
 });
 

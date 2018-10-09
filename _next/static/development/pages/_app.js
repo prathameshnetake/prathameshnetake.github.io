@@ -33,8 +33,8 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["create
       dark: _material_ui_core_colors_purple__WEBPACK_IMPORTED_MODULE_2___default.a[700]
     },
     secondary: {
-      light: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[300],
-      main: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[500],
+      light: "rgba(69, 60, 213, 0.5)",
+      main: "#453cd5",
       dark: _material_ui_core_colors_green__WEBPACK_IMPORTED_MODULE_3___default.a[700]
     }
   },
