@@ -2,11 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 
 
-const styles = theme => ({
+const styles = () => ({
   root: {
     flexGrow: 1,
     marginLeft: 50,
@@ -39,7 +38,7 @@ const styles = theme => ({
     justifyContent: "center",
     alignItems: "center",
     "& img": {
-      width: 40
+      width: 75
     }
   },
   skillImagelist: {
@@ -80,22 +79,22 @@ function Footer(props) {
           <ul className={classes.skillImagelist}>
             <li>
               <Paper className={classes.skillImage}>
-                <img src="/static/assets/skill1.png" alt=""/>
+                <img src="/static/assets/node.png" alt=""/>
               </Paper>
             </li>
             <li>
               <Paper className={classes.skillImage}>
-                <img src="/static/assets/skill2.png" alt=""/>
+                <img src="/static/assets/javascript.svg" alt=""/>
               </Paper>
             </li>
             <li>
               <Paper className={classes.skillImage}>
-                <img src="/static/assets/skill3.png" alt=""/>
+                <img src="/static/assets/react.svg" alt=""/>
               </Paper>
             </li>
             <li>
               <Paper className={classes.skillImage}>
-                <img src="/static/assets/skill4.png" alt=""/>
+                <img src="/static/assets/css.svg" alt=""/>
               </Paper>
             </li>
           </ul>

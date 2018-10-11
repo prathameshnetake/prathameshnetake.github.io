@@ -36,7 +36,7 @@ const styles = theme => ({
   }
 });
 
-function Footer(props) {
+function Home(props) {
   const {classes} = props;
   return (
     <div className={classes.root}>
@@ -44,7 +44,7 @@ function Footer(props) {
         Prathamesh Netake
       </Typography>
       <Typography variant="display1">
-        Full Stack JavaScript Developer & Designer 
+        Full Stack JavaScript Developer & Designer
       </Typography>
       <Typography variant="title" color="secondary">
         since 2016
@@ -58,8 +58,8 @@ function Footer(props) {
   );
 }
 
-Footer.propTypes = {
+Home.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Footer);
+export default withStyles(styles)(Home);

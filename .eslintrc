@@ -184,11 +184,6 @@
     "spaced-comment": 2,
     "wrap-regex": 0,
     "max-depth": 0,
-    "max-len": [2, 120, {
-      "ignoreStrings": true,
-      "ignoreTemplateLiterals": true,
-      "ignoreComments": true
-    }],
     "max-params": 0,
     "max-statements": 0,
     "no-plusplus": 0,
