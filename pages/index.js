@@ -18,7 +18,7 @@ function MyApp(props) {
   return (
     <React.Fragment>
       <div className={classes.mainWrapper}>
-        <Navbar />
+        <Navbar active="home"/>
         <Footer />
         <Home />
       </div>
