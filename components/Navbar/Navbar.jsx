@@ -70,7 +70,7 @@ function ButtonAppBar(props) {
               <Button className={classnames(classes.navLink, {active: active === "portfolio"})}>Portfolio</Button>
             </li>
             <li>
-              <Button className={classnames(classes.navLink, {active: active === "experiance"})}>Experiance</Button>
+              <Button className={classnames(classes.navLink, {active: active === "experience"})}>Experience</Button>
             </li>
             <li>
               <Button className={classnames(classes.navLink, {active: active === "contact"})}>Contact</Button>
