@@ -427,19 +427,26 @@ function ButtonAppBar(props) {
       lineNumber: 72
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.navLink, {
-      active: active === "experiance"
-    }),
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    href: "/experience",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
     },
     __self: this
-  }, "Experiance")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.navLink, {
+      active: active === "experience"
+    }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 74
+    },
+    __self: this
+  }, "Experience"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -448,7 +455,7 @@ function ButtonAppBar(props) {
     }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 78
     },
     __self: this
   }, "Contact"))))));
