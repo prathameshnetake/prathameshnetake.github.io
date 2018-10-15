@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import CVButton from "../CVButton/CVButton.jsx";
 
 const styles = theme => ({
   root: {
@@ -50,6 +51,10 @@ const styles = theme => ({
     flexDirection: "column",
     justifyContent: "center",
     padding: "1rem"
+  },
+  btnWrapper: {
+    textAlign: "center",
+    padding: "3rem"
   }
 });
 
@@ -123,6 +128,9 @@ function Home(props) {
             </div>
           </div>
         </div>
+      </div>
+      <div className={classes.btnWrapper}>
+        <CVButton />
       </div>
     </div>
   );

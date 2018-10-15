@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 import pink from "@material-ui/core/colors/pink";
+import CVButton from "../CVButton/CVButton.jsx";
 
 const styles = theme => ({
   root: {
@@ -49,11 +49,7 @@ function Home(props) {
       <Typography variant="title" color="secondary">
         since 2016
       </Typography>
-      <Button variant="contained" size="small" className={classes.cvBtn}>
-        <Typography variant="subheading" className={classes.cvText}>
-          Download CV
-        </Typography>
-      </Button>
+      <CVButton />
     </div>
   );
 }
