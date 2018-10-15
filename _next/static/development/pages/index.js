@@ -52,7 +52,7 @@ var styles = function styles(theme) {
 
 var handleClick = function handleClick() {
   setTimeout(function () {
-    var win = window.open("static/resume.pdf", "_blank");
+    var win = window.open("/static/resume.pdf", "_blank");
     win.focus();
   }, 250);
 };
@@ -22506,7 +22506,7 @@ MyApp.propTypes = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -22531,5 +22531,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
