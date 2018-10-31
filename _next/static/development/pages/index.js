@@ -154,34 +154,12 @@ function Footer(props) {
       lineNumber: 32
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/social/facebook.svg",
-    alt: "facebook",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
+    href: "https://www.linkedin.com/in/prathamesh-netake-64264123",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: classes.socialItem,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/social/instagram.svg",
-    alt: "facebook",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: classes.socialItem,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -189,14 +167,14 @@ function Footer(props) {
     alt: "facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 34
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: classes.socialItem,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -204,7 +182,7 @@ function Footer(props) {
     alt: "facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 38
     },
     __self: this
   }))));
@@ -303,18 +281,10 @@ function Home(props) {
       lineNumber: 46
     },
     __self: this
-  }, "Full Stack JavaScript Developer & Designer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    variant: "title",
-    color: "secondary",
+  }, "Full Stack JavaScript Developer & Designer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CVButton_CVButton_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
-    },
-    __self: this
-  }, "since 2016"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CVButton_CVButton_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
     },
     __self: this
   }));
@@ -467,6 +437,7 @@ function ButtonAppBar(props) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
     href: "/about",
+    prefetch: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
@@ -504,6 +475,7 @@ function ButtonAppBar(props) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
     href: "/experience",
+    prefetch: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73

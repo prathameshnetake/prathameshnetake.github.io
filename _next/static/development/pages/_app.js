@@ -15,7 +15,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/Typography/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/CreditFooter/CreditFooter.jsx";
+
 
 
 
@@ -30,7 +33,17 @@ var styles = function styles(theme) {
       height: 30,
       color: "white",
       flexGrow: 1,
-      display: "flex"
+      display: "flex",
+      justifyContent: "flex-end",
+      alignItems: "center",
+      zIndex: 10
+    },
+    credit: {
+      color: "white",
+      padding: "0 1rem",
+      "& a": {
+        color: "white"
+      }
     }
   };
 };
@@ -41,10 +54,26 @@ function CreditFooter(props) {
     className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 32
     },
     __self: this
-  }, "this is credit footer");
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    color: "#000",
+    className: classes.credit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, "Design with \u2665 by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
+    href: "https://www.behance.net/akhileshte3fd4/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "akhilesh_tetambe")));
 }
 
 CreditFooter.propTypes = {
@@ -981,6 +1010,386 @@ var _CssBaseline = _interopRequireDefault(__webpack_require__(/*! ./CssBaseline 
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/Typography/Typography.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/Typography/Typography.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.styles = void 0;
+
+var _readOnlyError2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/readOnlyError */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
+
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
+
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
+
+var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
+
+var _helpers = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/utils/helpers.js");
+
+var _chainPropTypes = _interopRequireDefault(__webpack_require__(/*! ../utils/chainPropTypes */ "./node_modules/@material-ui/core/utils/chainPropTypes.js"));
+
+var styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      display: 'block',
+      margin: 0
+    },
+
+    /* Styles applied to the root element if `variant="display4"`. */
+    display4: theme.typography.display4,
+
+    /* Styles applied to the root element if `variant="display3"`. */
+    display3: theme.typography.display3,
+
+    /* Styles applied to the root element if `variant="display2"`. */
+    display2: theme.typography.display2,
+
+    /* Styles applied to the root element if `variant="display1"`. */
+    display1: theme.typography.display1,
+
+    /* Styles applied to the root element if `variant="headline"`. */
+    headline: theme.typography.headline,
+
+    /* Styles applied to the root element if `variant="title"`. */
+    title: theme.typography.title,
+
+    /* Styles applied to the root element if `variant="subheading"`. */
+    subheading: theme.typography.subheading,
+
+    /* Styles applied to the root element if `variant="body2"`. */
+    body2: theme.typography.body2,
+
+    /* Styles applied to the root element if `variant="body1"`. */
+    body1: theme.typography.body1,
+
+    /* Styles applied to the root element if `variant="caption"`. */
+    caption: theme.typography.caption,
+
+    /* Styles applied to the root element if `variant="button"`. */
+    button: theme.typography.button,
+
+    /* Styles applied to the root element if `variant="h1"`. */
+    h1: theme.typography.h1,
+
+    /* Styles applied to the root element if `variant="h2"`. */
+    h2: theme.typography.h2,
+
+    /* Styles applied to the root element if `variant="h3"`. */
+    h3: theme.typography.h3,
+
+    /* Styles applied to the root element if `variant="h4"`. */
+    h4: theme.typography.h4,
+
+    /* Styles applied to the root element if `variant="h5"`. */
+    h5: theme.typography.h5,
+
+    /* Styles applied to the root element if `variant="h6"`. */
+    h6: theme.typography.h6,
+
+    /* Styles applied to the root element if `variant="subtitle1"`. */
+    subtitle1: theme.typography.subtitle1,
+
+    /* Styles applied to the root element if `variant="subtitle2"`. */
+    subtitle2: theme.typography.subtitle2,
+
+    /* Styles applied to the root element if `variant="overline"`. */
+    overline: theme.typography.overline,
+
+    /* Styles applied to the root element if `variant="srOnly"`. Only accessible to screen readers. */
+    srOnly: {
+      position: 'absolute',
+      height: 1,
+      width: 1,
+      overflow: 'hidden'
+    },
+
+    /* Styles applied to the root element if `align="left"`. */
+    alignLeft: {
+      textAlign: 'left'
+    },
+
+    /* Styles applied to the root element if `align="center"`. */
+    alignCenter: {
+      textAlign: 'center'
+    },
+
+    /* Styles applied to the root element if `align="right"`. */
+    alignRight: {
+      textAlign: 'right'
+    },
+
+    /* Styles applied to the root element if `align="justify"`. */
+    alignJustify: {
+      textAlign: 'justify'
+    },
+
+    /* Styles applied to the root element if `align="nowrap"`. */
+    noWrap: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    },
+
+    /* Styles applied to the root element if `gutterBottom={true}`. */
+    gutterBottom: {
+      marginBottom: '0.35em'
+    },
+
+    /* Styles applied to the root element if `paragraph={true}`. */
+    paragraph: {
+      marginBottom: 16
+    },
+
+    /* Styles applied to the root element if `color="inherit"`. */
+    colorInherit: {
+      color: 'inherit'
+    },
+
+    /* Styles applied to the root element if `color="primary"`. */
+    colorPrimary: {
+      color: theme.palette.primary.main
+    },
+
+    /* Styles applied to the root element if `color="secondary"`. */
+    colorSecondary: {
+      color: theme.palette.secondary.main
+    },
+
+    /* Styles applied to the root element if `color="textPrimary"`. */
+    colorTextPrimary: {
+      color: theme.palette.text.primary
+    },
+
+    /* Styles applied to the root element if `color="textSecondary"`. */
+    colorTextSecondary: {
+      color: theme.palette.text.secondary
+    },
+
+    /* Styles applied to the root element if `color="error"`. */
+    colorError: {
+      color: theme.palette.error.main
+    }
+  };
+};
+
+exports.styles = styles;
+var nextVariants = {
+  display4: 'h1',
+  display3: 'h2',
+  display2: 'h3',
+  display1: 'h4',
+  headline: 'h5',
+  title: 'h6',
+  subheading: 'subtitle1'
+};
+
+function getVariant(theme, variantProp) {
+  var typography = theme.typography;
+  var variant = variantProp;
+
+  if (!variant) {
+    variant = typography.useNextVariants ? 'body2' : 'body1';
+  } // complete v2 switch
+
+
+  if (typography.useNextVariants) {
+    variant = nextVariants[variant] || variant;
+  }
+
+  return variant;
+}
+
+var defaultHeadlineMapping = {
+  h1: 'h1',
+  h2: 'h2',
+  h3: 'h3',
+  h4: 'h4',
+  h5: 'h5',
+  h6: 'h6',
+  subtitle1: 'h6',
+  subtitle2: 'h6',
+  body1: 'p',
+  body2: 'p',
+  // deprecated
+  display4: 'h1',
+  display3: 'h1',
+  display2: 'h1',
+  display1: 'h1',
+  headline: 'h1',
+  title: 'h2',
+  subheading: 'h3'
+};
+
+function Typography(props) {
+  var _classNames;
+
+  var align = props.align,
+      classes = props.classes,
+      classNameProp = props.className,
+      color = props.color,
+      componentProp = props.component,
+      gutterBottom = props.gutterBottom,
+      headlineMapping = props.headlineMapping,
+      internalDeprecatedVariant = props.internalDeprecatedVariant,
+      noWrap = props.noWrap,
+      paragraph = props.paragraph,
+      theme = props.theme,
+      variantProp = props.variant,
+      other = (0, _objectWithoutProperties2.default)(props, ["align", "classes", "className", "color", "component", "gutterBottom", "headlineMapping", "internalDeprecatedVariant", "noWrap", "paragraph", "theme", "variant"]);
+  var variant = getVariant(theme, variantProp);
+  var className = (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes[variant], variant !== 'inherit'), (0, _defineProperty2.default)(_classNames, classes["color".concat((0, _helpers.capitalize)(color))], color !== 'default'), (0, _defineProperty2.default)(_classNames, classes.noWrap, noWrap), (0, _defineProperty2.default)(_classNames, classes.gutterBottom, gutterBottom), (0, _defineProperty2.default)(_classNames, classes.paragraph, paragraph), (0, _defineProperty2.default)(_classNames, classes["align".concat((0, _helpers.capitalize)(align))], align !== 'inherit'), _classNames), classNameProp);
+  var Component = componentProp || (paragraph ? 'p' : headlineMapping[variant] || defaultHeadlineMapping[variant]) || 'span';
+  return _react.default.createElement(Component, (0, _extends2.default)({
+    className: className
+  }, other));
+}
+
+Typography.propTypes =  true ? {
+  /**
+   * Set the text-align on the component.
+   */
+  align: _propTypes.default.oneOf(['inherit', 'left', 'center', 'right', 'justify']),
+
+  /**
+   * The content of the component.
+   */
+  children: _propTypes.default.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css-api) below for more details.
+   */
+  classes: _propTypes.default.object.isRequired,
+
+  /**
+   * @ignore
+   */
+  className: _propTypes.default.string,
+
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   */
+  color: _propTypes.default.oneOf(['default', 'error', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary']),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a DOM element or a component.
+   * By default, it maps the variant to a good default headline component.
+   */
+  component: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.func, _propTypes.default.object]),
+
+  /**
+   * If `true`, the text will have a bottom margin.
+   */
+  gutterBottom: _propTypes.default.bool,
+
+  /**
+   * We are empirically mapping the variant property to a range of different DOM element types.
+   * For instance, subtitle1 to `<h6>`.
+   * If you wish to change that mapping, you can provide your own.
+   * Alternatively, you can use the `component` property.
+   * The default mapping is the following:
+   */
+  headlineMapping: _propTypes.default.object,
+
+  /**
+   * A deprecated variant is used from an internal component. Users don't need
+   * a deprecation warning here if they switched to the v2 theme. They already
+   * get the mapping that will be applied in the next major release.
+   *
+   * @internal
+   */
+  internalDeprecatedVariant: _propTypes.default.bool,
+
+  /**
+   * If `true`, the text will not wrap, but instead will truncate with an ellipsis.
+   */
+  noWrap: _propTypes.default.bool,
+
+  /**
+   * If `true`, the text will have a bottom margin.
+   */
+  paragraph: _propTypes.default.bool,
+
+  /**
+   * Applies the theme typography styles.
+   * Use `body1` as the default value with the legacy implementation and `body2` with the new one.
+   */
+  variant: (0, _chainPropTypes.default)(_propTypes.default.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline', 'srOnly', 'inherit', // deprecated
+  'display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading']), function (props) {
+    var deprecatedVariants = ((0, _readOnlyError2.default)("deprecatedVariants"),  true ? ['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'] : undefined);;
+
+    if (props.theme.typography.useNextVariants && !props.internalDeprecatedVariant && deprecatedVariants.indexOf(props.variant) !== -1) {
+      return new Error('You are using a deprecated typography variant: ' + "`".concat(props.variant, "` that will be removed in the next major release.") + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2');
+    }
+
+    return null;
+  })
+} : undefined;
+Typography.defaultProps = {
+  align: 'inherit',
+  color: 'default',
+  gutterBottom: false,
+  headlineMapping: defaultHeadlineMapping,
+  noWrap: false,
+  paragraph: false
+};
+
+var _default = (0, _withStyles.default)(styles, {
+  name: 'MuiTypography',
+  withTheme: true
+})(Typography);
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/Typography/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@material-ui/core/Typography/index.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function get() {
+    return _Typography.default;
+  }
+});
+
+var _Typography = _interopRequireDefault(__webpack_require__(/*! ./Typography */ "./node_modules/@material-ui/core/Typography/Typography.js"));
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/colors/common.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@material-ui/core/colors/common.js ***!
@@ -1509,6 +1918,21 @@ function _possibleConstructorReturn(self, call) {
 }
 
 module.exports = _possibleConstructorReturn;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _readOnlyError(name) {
+  throw new Error("\"" + name + "\" is read-only");
+}
+
+module.exports = _readOnlyError;
 
 /***/ }),
 
@@ -4015,6 +4439,35 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/utils/chainPropTypes.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/utils/chainPropTypes.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function chainPropTypes(propType1, propType2) {
+  /* istanbul ignore if */
+  if (false) {}
+
+  return function validate() {
+    return propType1.apply(void 0, arguments) || propType2.apply(void 0, arguments);
+  };
+}
+
+var _default = chainPropTypes;
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/utils/exactProp.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@material-ui/core/utils/exactProp.js ***!
@@ -4110,6 +4563,104 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/utils/helpers.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/utils/helpers.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.capitalize = capitalize;
+exports.contains = contains;
+exports.findIndex = findIndex;
+exports.find = find;
+exports.createChainedFunction = createChainedFunction;
+
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/typeof.js"));
+
+var _warning = _interopRequireDefault(__webpack_require__(/*! warning */ "./node_modules/@material-ui/core/node_modules/warning/warning.js"));
+
+function capitalize(string) {
+  if ("development" !== 'production' && typeof string !== 'string') {
+    throw new Error('Material-UI: capitalize(string) expects a string argument.');
+  }
+
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function contains(obj, pred) {
+  return Object.keys(pred).every(function (key) {
+    return obj.hasOwnProperty(key) && obj[key] === pred[key];
+  });
+}
+
+function findIndex(arr, pred) {
+  var predType = (0, _typeof2.default)(pred);
+
+  for (var i = 0; i < arr.length; i += 1) {
+    if (predType === 'function' && !!pred(arr[i], i, arr) === true) {
+      return i;
+    }
+
+    if (predType === 'object' && contains(arr[i], pred)) {
+      return i;
+    }
+
+    if (['string', 'number', 'boolean'].indexOf(predType) !== -1) {
+      return arr.indexOf(pred);
+    }
+  }
+
+  return -1;
+}
+
+function find(arr, pred) {
+  var index = findIndex(arr, pred);
+  return index > -1 ? arr[index] : undefined;
+}
+/**
+ * Safe chained function
+ *
+ * Will only create a new function if needed,
+ * otherwise will pass back existing functions or null.
+ *
+ * @param {function} functions to chain
+ * @returns {function|null}
+ */
+
+
+function createChainedFunction() {
+  for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {
+    funcs[_key] = arguments[_key];
+  }
+
+  return funcs.reduce(function (acc, func) {
+    if (func == null) {
+      return acc;
+    }
+
+     true ? (0, _warning.default)(typeof func === 'function', 'Material-UI: invalid Argument Type, must only provide functions, undefined, or null.') : undefined;
+    return function chainedFunction() {
+      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      acc.apply(this, args);
+      func.apply(this, args);
+    };
+  }, function () {});
+}
+
+/***/ }),
+
 /***/ "./node_modules/brcast/dist/brcast.es.js":
 /*!***********************************************!*\
   !*** ./node_modules/brcast/dist/brcast.es.js ***!
@@ -4159,6 +4710,68 @@ function createBroadcast (initialState) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (createBroadcast);
+
+
+/***/ }),
+
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg) && arg.length) {
+				var inner = classNames.apply(null, arg);
+				if (inner) {
+					classes.push(inner);
+				}
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if (typeof module !== 'undefined' && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
 
 
 /***/ }),
