@@ -46,9 +46,6 @@ function Home(props) {
       <Typography variant="display1">
         Full Stack JavaScript Developer & Designer
       </Typography>
-      <Typography variant="title" color="secondary">
-        since 2016
-      </Typography>
       <CVButton />
     </div>
   );

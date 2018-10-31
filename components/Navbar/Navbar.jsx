@@ -62,7 +62,7 @@ function ButtonAppBar(props) {
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/about" prefetch>
                 <Button className={classnames(classes.navLink, {active: active === "about"})}>About</Button>
               </Link>
             </li>
@@ -70,7 +70,7 @@ function ButtonAppBar(props) {
               <Button className={classnames(classes.navLink, {active: active === "portfolio"})}>Portfolio</Button>
             </li>
             <li>
-              <Link href="/experience">
+              <Link href="/experience" prefetch>
                 <Button className={classnames(classes.navLink, {active: active === "experience"})}>Experience</Button>
               </Link>
             </li>

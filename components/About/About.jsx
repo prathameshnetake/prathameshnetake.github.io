@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
+const data = require("../../content/content.json");
 
 
 const styles = () => ({
@@ -57,7 +58,8 @@ const styles = () => ({
   },
   quote: {
     width: "70%",
-    padding: "2rem"
+    padding: "2rem",
+    textAlign: "center"
   }
 });
 
@@ -73,9 +75,7 @@ function Footer(props) {
           <Typography variant="h3" color="primary" className={classes.aboutxt}>
             About Me
           </Typography>
-          <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex laboriosam ea doloribus perspiciatis maxime fuga quaerat commodi voluptatum, maiores laudantium animi sapiente iusto ipsam sint voluptates, nisi eaque optio!
-          </Typography>
+          <Typography variant="body1" dangerouslySetInnerHTML={{__html: data.aboutMe}} />
           <ul className={classes.skillImagelist}>
             <li>
               <Paper className={classes.skillImage}>
@@ -102,9 +102,11 @@ function Footer(props) {
       </div>
       <div className={classes.tagLine}>
         <img src="/static/assets/quote-open.png" alt=""/>
-        <Typography variant="title" className={classes.quote} color="secondary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quisquam soluta laudantium laborum consequuntur. Suscipit ad quam quos vel veritatis explicabo dolor. Reprehenderit natus ea minima nostrum. Autem, vel ut.
-        </Typography>
+        <Typography
+          variant="title"
+          className={classes.quote}
+          color="secondary"
+          dangerouslySetInnerHTML={{__html: data.quote}} />
         <img src="/static/assets/quote-close.png" alt=""/>
       </div>
     </div>

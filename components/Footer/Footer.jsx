@@ -30,13 +30,9 @@ function Footer(props) {
     <div className={classes.root}>
       <ul className={classes.socialList}>
         <li className={classes.socialItem}>
-          <img src="/static/social/facebook.svg" alt="facebook"/>
-        </li>
-        <li className={classes.socialItem}>
-          <img src="/static/social/instagram.svg" alt="facebook"/>
-        </li>
-        <li className={classes.socialItem}>
-          <img src="/static/social/linkedin.svg" alt="facebook"/>
+          <a target="_blank" href="https://www.linkedin.com/in/prathamesh-netake-64264123">
+            <img src="/static/social/linkedin.svg" alt="facebook"/>
+          </a>
         </li>
         <li className={classes.socialItem}>
           <img src="/static/social/twitter.svg" alt="facebook"/>
