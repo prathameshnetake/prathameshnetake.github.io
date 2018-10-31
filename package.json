@@ -2,9 +2,13 @@
   "dependencies": {
     "@material-ui/core": "^3.1.1",
     "@material-ui/icons": "^3.0.1",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.0.0",
+    "net": "^1.0.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-ga": "^2.5.3",
     "react-jss": "latest"
   },
   "scripts": {

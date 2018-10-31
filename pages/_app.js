@@ -5,6 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import JssProvider from "react-jss/lib/JssProvider";
 import getPageContext from "../lib/getPageContext";
 import CreditFooter from "../components/CreditFooter/CreditFooter.jsx";
+import {initGA, logPageView} from "../lib/analytics";
 
 class MyApp extends App {
   constructor(props) {
@@ -20,6 +21,11 @@ class MyApp extends App {
     if (jssStyles && jssStyles.parentNode) {
       jssStyles.parentNode.removeChild(jssStyles);
     }
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
   }
 
   render() {

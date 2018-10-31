@@ -35,7 +35,19 @@ function Footer(props) {
           </a>
         </li>
         <li className={classes.socialItem}>
-          <img src="/static/social/twitter.svg" alt="facebook"/>
+          <a target="_blank" href="https://github.com/prathameshnetake">
+            <img src="/static/social/github.svg" alt="GitHub"/>
+          </a>
+        </li>
+        <li className={classes.socialItem}>
+          <a target="_blank" href="https://medium.com/@prathamesh.netake">
+            <img src="/static/social/medium.svg" alt="Medium"/>
+          </a>
+        </li>
+        <li className={classes.socialItem}>
+          <a target="_blank" href="https://twitter.com/prathu_netake">
+            <img src="/static/social/twitter.svg" alt="Twitter"/>
+          </a>
         </li>
       </ul>
     </div>

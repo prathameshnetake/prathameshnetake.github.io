@@ -67,7 +67,9 @@ function ButtonAppBar(props) {
               </Link>
             </li>
             <li>
-              <Button className={classnames(classes.navLink, {active: active === "portfolio"})}>Portfolio</Button>
+              <Link href="/portfolio" prefetch>
+                <Button className={classnames(classes.navLink, {active: active === "portfolio"})}>Portfolio</Button>
+              </Link>
             </li>
             <li>
               <Link href="/experience" prefetch>
