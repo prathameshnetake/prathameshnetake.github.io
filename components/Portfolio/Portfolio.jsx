@@ -73,7 +73,7 @@ class Portfolio extends React.Component {
             const regex = /(<([^>]+)>)/ig;
             trimmedString = trimmedString.replace(regex, "");
             return (
-              <Grid item xs={12} sm={6} lg={3} key={blog.guid}>
+              <Grid item xs={12} sm={6} lg={3} key={blog.guid[0]._}>
                 <Card className={classes.card} onClick={this.handleCardClick(blog.link[0])}>
                   <CardActionArea>
                     <CardMedia

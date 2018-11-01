@@ -16,6 +16,7 @@ class MyDocument extends Document {
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           />
+          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           {/* PWA primary color */}
           <meta name="theme-color" content={pageContext.theme.palette.primary.main} />
           {/* <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> */}
