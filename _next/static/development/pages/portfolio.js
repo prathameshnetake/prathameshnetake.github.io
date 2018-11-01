@@ -595,7 +595,7 @@ function (_React$Component) {
           xs: 12,
           sm: 6,
           lg: 3,
-          key: blog.guid,
+          key: blog.guid[0]._,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 76
@@ -34209,7 +34209,7 @@ MyApp.propTypes = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!***********************************!*\
   !*** multi ./pages/portfolio.jsx ***!
   \***********************************/
@@ -34234,5 +34234,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=portfolio.js.map
