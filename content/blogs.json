@@ -1,4 +1,4 @@
 {
-  "mediumUrl": "https://medium.com/feed/@prathamesh.netake",
-  "rss2json": "https://api.rss2json.com/v1/api.json"
+  "mediumUrl": "http://medium.jasonmdesign.com/feed",
+  "rss2json": "https://n3mdn8ws3f.execute-api.us-west-2.amazonaws.com/medium"
 }
