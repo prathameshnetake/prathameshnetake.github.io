@@ -30,7 +30,7 @@ function CreditFooter(props) {
   const {classes} = props;
   return (
     <div className={classes.root}>
-      <Typography color="#000" className={classes.credit}>
+      <Typography color="textPrimary" className={classes.credit}>
         Design with &hearts; by <a target="_blank" href="https://www.behance.net/akhileshte3fd4/">akhilesh_tetambe</a>
       </Typography>
     </div>

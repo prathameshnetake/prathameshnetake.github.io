@@ -10,6 +10,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import moment from "moment";
 
 const blogData = require("../../content/blogs.json");
 
@@ -20,9 +21,13 @@ const styles = () => ({
     backgroundPosition: 0,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
     padding: "2rem",
     overflow: "scroll"
+  },
+  title: {
+    fontSize: "1.5rem",
+    textAlign: "center",
+    margin: "2rem 0"
   },
   card: {
     maxWidth: 345
@@ -56,6 +61,7 @@ class Portfolio extends React.Component {
     const {classes} = this.props;
     return (
       <div className={classes.root}>
+        <Typography variant="button" color="primary" className={classes.title}>Blogs</Typography>
         <Grid container spacing={24}>
           {this.state.blogs.map(blog => {
             const description = blog["content:encoded"][0];
@@ -72,6 +78,8 @@ class Portfolio extends React.Component {
             trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
             const regex = /(<([^>]+)>)/ig;
             trimmedString = trimmedString.replace(regex, "");
+            console.log(blog);
+            const duratiom = moment(blog.pubDate[0]).fromNow();
             return (
               <Grid item xs={12} sm={6} lg={3} key={blog.guid[0]._}>
                 <Card className={classes.card} onClick={this.handleCardClick(blog.link[0])}>
@@ -85,7 +93,8 @@ class Portfolio extends React.Component {
                       title={blog.title}
                     />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
+                      <Typography variant="subtitle2" color="textSecondary">{duratiom}</Typography>
+                      <Typography gutterBottom variant="h6" component="h2">
                         {blog.title}
                       </Typography>
                       <Typography component="p">
