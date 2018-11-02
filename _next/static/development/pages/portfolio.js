@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/portfolio.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\portfolio.js"],{
 
 /***/ "./components/Footer/Footer.jsx":
 /*!**************************************!*\
@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Footer/Footer.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\components\\Footer\\Footer.jsx";
 
 
 
@@ -187,7 +187,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Navbar/Navbar.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\components\\Navbar\\Navbar.jsx";
 
 
 
@@ -427,7 +427,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_13__);
 
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Portfolio/Portfolio.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\components\\Portfolio\\Portfolio.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1740,9 +1740,15 @@ var styles = function styles(theme) {
 
     /* Styles applied to the root element if `variant="outlined"` and `color="primary"`. */
     outlinedPrimary: {
+      color: theme.palette.primary.main,
       border: "1px solid ".concat((0, _colorManipulator.fade)(theme.palette.primary.main, 0.5)),
       '&:hover': {
-        border: "1px solid ".concat(theme.palette.primary.main)
+        border: "1px solid ".concat(theme.palette.primary.main),
+        backgroundColor: (0, _colorManipulator.fade)(theme.palette.primary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
       },
       '&$disabled': {
         border: "1px solid ".concat(theme.palette.action.disabled)
@@ -1751,9 +1757,15 @@ var styles = function styles(theme) {
 
     /* Styles applied to the root element if `variant="outlined"` and `color="secondary"`. */
     outlinedSecondary: {
+      color: theme.palette.secondary.main,
       border: "1px solid ".concat((0, _colorManipulator.fade)(theme.palette.secondary.main, 0.5)),
       '&:hover': {
-        border: "1px solid ".concat(theme.palette.secondary.main)
+        border: "1px solid ".concat(theme.palette.secondary.main),
+        backgroundColor: (0, _colorManipulator.fade)(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
       },
       '&$disabled': {
         border: "1px solid ".concat(theme.palette.action.disabled)
@@ -1907,7 +1919,7 @@ function Button(props) {
       other = (0, _objectWithoutProperties2.default)(props, ["children", "classes", "className", "color", "disabled", "disableFocusRipple", "focusVisibleClassName", "fullWidth", "mini", "size", "variant"]);
   var fab = variant === 'fab' || variant === 'extendedFab';
   var contained = variant === 'contained' || variant === 'raised';
-  var text = variant === 'text' || variant === 'flat' || variant === 'outlined';
+  var text = variant === 'text' || variant === 'flat';
   var className = (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes.fab, fab), (0, _defineProperty2.default)(_classNames, classes.mini, fab && mini), (0, _defineProperty2.default)(_classNames, classes.extendedFab, variant === 'extendedFab'), (0, _defineProperty2.default)(_classNames, classes.text, text), (0, _defineProperty2.default)(_classNames, classes.textPrimary, text && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.textSecondary, text && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.flat, variant === 'text' || variant === 'flat'), (0, _defineProperty2.default)(_classNames, classes.flatPrimary, (variant === 'text' || variant === 'flat') && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.flatSecondary, (variant === 'text' || variant === 'flat') && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.contained, contained || fab), (0, _defineProperty2.default)(_classNames, classes.containedPrimary, (contained || fab) && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.containedSecondary, (contained || fab) && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.raised, contained || fab), (0, _defineProperty2.default)(_classNames, classes.raisedPrimary, (contained || fab) && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.raisedSecondary, (contained || fab) && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.outlined, variant === 'outlined'), (0, _defineProperty2.default)(_classNames, classes.outlinedPrimary, variant === 'outlined' && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.outlinedSecondary, variant === 'outlined' && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes["size".concat((0, _helpers.capitalize)(size))], size !== 'medium'), (0, _defineProperty2.default)(_classNames, classes.disabled, disabled), (0, _defineProperty2.default)(_classNames, classes.fullWidth, fullWidth), (0, _defineProperty2.default)(_classNames, classes.colorInherit, color === 'inherit'), _classNames), classNameProp);
   return _react.default.createElement(_ButtonBase.default, (0, _extends2.default)({
     className: className,
@@ -3188,7 +3200,11 @@ var createRippleHandler = function createRippleHandler(instance, eventName, acti
 /* istanbul ignore if */
 
 
-if (false) {}
+if (typeof window === 'undefined') {
+  createRippleHandler = function createRippleHandler() {
+    return function () {};
+  };
+}
 
 var _default = createRippleHandler;
 exports.default = _default;
@@ -4817,8 +4833,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.styles = void 0;
 
-var _readOnlyError2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/readOnlyError */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js"));
-
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
 
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
@@ -5127,7 +5141,7 @@ Typography.propTypes =  true ? {
    */
   variant: (0, _chainPropTypes.default)(_propTypes.default.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline', 'srOnly', 'inherit', // deprecated
   'display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading']), function (props) {
-    var deprecatedVariants = ((0, _readOnlyError2.default)("deprecatedVariants"),  true ? ['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'] : undefined);;
+    var deprecatedVariants = ['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'];
 
     if (props.theme.typography.useNextVariants && !props.internalDeprecatedVariant && deprecatedVariants.indexOf(props.variant) !== -1) {
       return new Error('You are using a deprecated typography variant: ' + "`".concat(props.variant, "` that will be removed in the next major release.") + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2');
@@ -5689,21 +5703,6 @@ function _possibleConstructorReturn(self, call) {
 }
 
 module.exports = _possibleConstructorReturn;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js ***!
-  \*********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _readOnlyError(name) {
-  throw new Error("\"" + name + "\" is read-only");
-}
-
-module.exports = _readOnlyError;
 
 /***/ }),
 
@@ -6487,31 +6486,17 @@ function createGenerateClassName() {
   var ruleCounter = 0;
   return function (rule, styleSheet) {
     ruleCounter += 1;
-     true ? (0, _warning.default)(ruleCounter < 1e10, ['Material-UI: you might have a memory leak.', 'The ruleCounter is not supposed to grow that much.'].join('')) : undefined; // Code branch the whole block at the expense of more code.
+     true ? (0, _warning.default)(ruleCounter < 1e10, ['Material-UI: you might have a memory leak.', 'The ruleCounter is not supposed to grow that much.'].join('')) : undefined;
 
-    if (dangerouslyUseGlobalCSS) {
-      if (styleSheet) {
-        if (styleSheet.options.name) {
-          return "".concat(styleSheet.options.name, "-").concat(rule.key);
-        }
-
-        if (styleSheet.options.classNamePrefix && "development" !== 'production') {
-          var prefix = safePrefix(styleSheet.options.classNamePrefix);
-          return "".concat(prefix, "-").concat(rule.key, "-").concat(seed).concat(ruleCounter);
-        }
-      }
-
-      if (false) {}
-
-      return "".concat(rule.key, "-").concat(seed).concat(ruleCounter);
+    if (dangerouslyUseGlobalCSS && styleSheet && styleSheet.options.name) {
+      return "".concat(safePrefix(styleSheet.options.name), "-").concat(rule.key);
     }
 
     if (false) {}
 
     if (styleSheet && styleSheet.options.classNamePrefix) {
-      var _prefix = safePrefix(styleSheet.options.classNamePrefix);
-
-      return "".concat(_prefix, "-").concat(rule.key, "-").concat(seed).concat(ruleCounter);
+      var prefix = safePrefix(styleSheet.options.classNamePrefix);
+      return "".concat(prefix, "-").concat(rule.key, "-").concat(seed).concat(ruleCounter);
     }
 
     return "".concat(rule.key, "-").concat(seed).concat(ruleCounter);
@@ -6826,6 +6811,8 @@ function createPalette(palette) {
     if (!color.contrastText) {
       color.contrastText = getContrastText(color.main);
     }
+
+    return color;
   }
 
   augmentColor(primary);
@@ -6923,7 +6910,7 @@ function round(value) {
 var caseAllCaps = {
   textTransform: 'uppercase'
 };
-var defaultFontFamiliy = '"Roboto", "Helvetica", "Arial", sans-serif';
+var defaultFontFamily = '"Roboto", "Helvetica", "Arial", sans-serif';
 /**
  * @see @link{https://material.io/design/typography/the-type-system.html}
  * @see @link{https://material.io/design/typography/understanding-typography.html}
@@ -6932,7 +6919,7 @@ var defaultFontFamiliy = '"Roboto", "Helvetica", "Arial", sans-serif';
 function createTypography(palette, typography) {
   var _ref = typeof typography === 'function' ? typography(palette) : typography,
       _ref$fontFamily = _ref.fontFamily,
-      fontFamily = _ref$fontFamily === void 0 ? defaultFontFamiliy : _ref$fontFamily,
+      fontFamily = _ref$fontFamily === void 0 ? defaultFontFamily : _ref$fontFamily,
       _ref$fontSize = _ref.fontSize,
       fontSize = _ref$fontSize === void 0 ? 14 : _ref$fontSize,
       _ref$fontWeightLight = _ref.fontWeightLight,
@@ -6945,10 +6932,12 @@ function createTypography(palette, typography) {
       htmlFontSize = _ref$htmlFontSize === void 0 ? 16 : _ref$htmlFontSize,
       _ref$useNextVariants = _ref.useNextVariants,
       useNextVariants = _ref$useNextVariants === void 0 ? Boolean(global.__MUI_USE_NEXT_TYPOGRAPHY_VARIANTS__) : _ref$useNextVariants,
+      _ref$suppressWarning = _ref.suppressWarning,
+      suppressWarning = _ref$suppressWarning === void 0 ? false : _ref$suppressWarning,
       allVariants = _ref.allVariants,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["fontFamily", "fontSize", "fontWeightLight", "fontWeightRegular", "fontWeightMedium", "htmlFontSize", "useNextVariants", "allVariants"]);
+      other = (0, _objectWithoutProperties2.default)(_ref, ["fontFamily", "fontSize", "fontWeightLight", "fontWeightRegular", "fontWeightMedium", "htmlFontSize", "useNextVariants", "suppressWarning", "allVariants"]);
 
-   true ? (0, _warning.default)(useNextVariants, 'Material-UI: you are using the deprecated typography variants ' + 'that will be removed in the next major release.' + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2') : undefined;
+   true ? (0, _warning.default)(useNextVariants || suppressWarning, 'Material-UI: you are using the deprecated typography variants ' + 'that will be removed in the next major release.' + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2') : undefined;
   var coef = fontSize / 14;
 
   var pxToRem = function pxToRem(size) {
@@ -6963,7 +6952,7 @@ function createTypography(palette, typography) {
       fontSize: pxToRem(size),
       // Unitless following http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
       lineHeight: lineHeight
-    }, fontFamily === defaultFontFamiliy ? {
+    }, fontFamily === defaultFontFamily ? {
       letterSpacing: "".concat(round(letterSpacing / size), "em")
     } : {}, casing, allVariants);
   };
@@ -7304,11 +7293,13 @@ var _jssVendorPrefixer = _interopRequireDefault(__webpack_require__(/*! jss-vend
 
 var _jssPropsSort = _interopRequireDefault(__webpack_require__(/*! jss-props-sort */ "./node_modules/jss-props-sort/lib/index.js"));
 
-// Subset of jss-preset-default with only the plugins the Material-UI
-// components are using.
+// Subset of jss-preset-default with only the plugins the Material-UI components are using.
 function jssPreset() {
   return {
-    plugins: [(0, _jssGlobal.default)(), (0, _jssNested.default)(), (0, _jssCamelCase.default)(), (0, _jssDefaultUnit.default)(), (0, _jssVendorPrefixer.default)(), (0, _jssPropsSort.default)()]
+    plugins: [(0, _jssGlobal.default)(), (0, _jssNested.default)(), (0, _jssCamelCase.default)(), (0, _jssDefaultUnit.default)(), // Disable the vendor prefixer server-side, it does nothing.
+    // This way, we can get a performance boost.
+    // In the documentation, we are using `autoprefixer` to solve this problem.
+    typeof window === 'undefined' ? null : (0, _jssVendorPrefixer.default)(), (0, _jssPropsSort.default)()]
   };
 }
 
@@ -7350,16 +7341,16 @@ function mergeClasses() {
     return baseClasses;
   }
 
-  return (0, _extends2.default)({}, baseClasses, Object.keys(newClasses).reduce(function (accumulator, key) {
-     true ? (0, _warning.default)(baseClasses[key] || !newClasses[key], ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not implemented in ".concat((0, _getDisplayName.default)(Component), "."), "You can only override one of the following: ".concat(Object.keys(baseClasses).join(','))].join('\n')) : undefined;
+  var nextClasses = (0, _extends2.default)({}, baseClasses);
+  Object.keys(newClasses).forEach(function (key) {
+     true ? (0, _warning.default)(baseClasses[key] || !newClasses[key], ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not implemented in ".concat((0, _getDisplayName.default)(Component), "."), "You can only override one of the following: ".concat(Object.keys(baseClasses).join(','), ".")].join('\n')) : undefined;
      true ? (0, _warning.default)(!newClasses[key] || typeof newClasses[key] === 'string', ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not valid for ".concat((0, _getDisplayName.default)(Component), "."), "You need to provide a non empty string instead of: ".concat(newClasses[key], ".")].join('\n')) : undefined;
 
     if (newClasses[key]) {
-      accumulator[key] = "".concat(baseClasses[key], " ").concat(newClasses[key]);
+      nextClasses[key] = "".concat(baseClasses[key], " ").concat(newClasses[key]);
     }
-
-    return accumulator;
-  }, {}));
+  });
+  return nextClasses;
 }
 
 var _default = mergeClasses;
@@ -7767,7 +7758,11 @@ function getDefaultTheme() {
     return defaultTheme;
   }
 
-  defaultTheme = (0, _createMuiTheme.default)();
+  defaultTheme = (0, _createMuiTheme.default)({
+    typography: {
+      suppressWarning: true
+    }
+  });
   return defaultTheme;
 } // Link a style sheet with a component.
 // It does not modify the component passed to it;
@@ -7968,6 +7963,7 @@ var withStyles = function withStyles(stylesOrCreator) {
           var meta = name;
 
           if ("development" !== 'production' && !meta) {
+            // Provide a better DX outside production.
             meta = (0, _getDisplayName.default)(Component);
              true ? (0, _warning.default)(typeof meta === 'string', ['Material-UI: the component displayName is invalid. It needs to be a string.', "Please fix the following component: ".concat(Component, ".")].join('\n')) : undefined;
           }
@@ -7978,7 +7974,7 @@ var withStyles = function withStyles(stylesOrCreator) {
             flip: typeof flip === 'boolean' ? flip : theme.direction === 'rtl',
             link: false
           }, this.sheetOptions, this.stylesCreatorSaved.options, {
-            name: name
+            name: name || Component.displayName
           }, styleSheetOptions));
           return sheet;
         }
@@ -8327,8 +8323,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getFunctionName = getFunctionName;
 exports.default = void 0;
-// Fork of recompose/getDisplayName with added IE11 support
-// Simplified polyfill for IE11 support
+// Fork of recompose/getDisplayName with added IE 11 support
+// Simplified polyfill for IE 11 support
 // https://github.com/JamesMGreene/Function.name/blob/58b314d4a983110c3682f1228f845d39ccca1817/Function.name.js#L3
 var fnNameMatchRegex = /^\s*function(?:\s|\s*\/\*.*\*\/\s*)+([^(\s/]*)\s*/;
 
@@ -46361,12 +46357,12 @@ module.exports = __webpack_require__(/*! ./dist/lib/link */ "./node_modules/next
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_10edf27d814a728d21af ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -46814,12 +46810,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_10edf27d814a728d21af ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -47427,12 +47423,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_10edf27d814a728d21af ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -48178,12 +48174,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_10edf27d814a728d21af ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -49401,12 +49397,12 @@ exports.classNamesShape = classNamesShape;
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_10edf27d814a728d21af ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -51287,7 +51283,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Navbar_Navbar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Navbar/Navbar.jsx */ "./components/Navbar/Navbar.jsx");
 /* harmony import */ var _components_Footer_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer/Footer.jsx */ "./components/Footer/Footer.jsx");
 /* harmony import */ var _components_Portfolio_Portfolio_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Portfolio/Portfolio.jsx */ "./components/Portfolio/Portfolio.jsx");
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/pages/portfolio.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\pages\\portfolio.jsx";
 
 
 
@@ -51368,7 +51364,7 @@ MyApp.propTypes = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!***********************************!*\
   !*** multi ./pages/portfolio.jsx ***!
   \***********************************/
@@ -51382,16 +51378,16 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_5d62d38be3592dca3a42":
+/***/ "dll-reference dll_10edf27d814a728d21af":
 /*!*******************************************!*\
-  !*** external "dll_5d62d38be3592dca3a42" ***!
+  !*** external "dll_10edf27d814a728d21af" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_5d62d38be3592dca3a42;
+module.exports = dll_10edf27d814a728d21af;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=portfolio.js.map
