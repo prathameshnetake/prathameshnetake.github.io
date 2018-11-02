@@ -58,7 +58,7 @@ function CreditFooter(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    color: "#000",
+    color: "textPrimary",
     className: classes.credit,
     __source: {
       fileName: _jsxFileName,
