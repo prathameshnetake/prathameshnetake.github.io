@@ -369,16 +369,24 @@ function ButtonAppBar(props) {
       lineNumber: 79
     },
     __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    href: "/contact",
+    prefetch: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.navLink, {
       active: active === "contact"
     }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 81
     },
     __self: this
-  }, "Contact"))))));
+  }, "Contact")))))));
 }
 
 ButtonAppBar.propTypes = {
@@ -716,10 +724,10 @@ Portfolio.propTypes = {
 /*!****************************!*\
   !*** ./content/blogs.json ***!
   \****************************/
-/*! exports provided: mediumUrl, rss2json, default */
+/*! exports provided: mediumUrl, rss2json, email, default */
 /***/ (function(module) {
 
-module.exports = {"mediumUrl":"http://medium.jasonmdesign.com/feed","rss2json":"https://n3mdn8ws3f.execute-api.us-west-2.amazonaws.com/medium"};
+module.exports = {"mediumUrl":"http://medium.jasonmdesign.com/feed","rss2json":"https://n3mdn8ws3f.execute-api.us-west-2.amazonaws.com/medium","email":"https://n3mdn8ws3f.execute-api.us-west-2.amazonaws.com/medium/"};
 
 /***/ }),
 
@@ -51364,7 +51372,7 @@ MyApp.propTypes = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!***********************************!*\
   !*** multi ./pages/portfolio.jsx ***!
   \***********************************/
@@ -51389,5 +51397,5 @@ module.exports = dll_10edf27d814a728d21af;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=portfolio.js.map
