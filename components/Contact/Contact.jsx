@@ -27,7 +27,9 @@ const styles = theme => ({
     margin: "2rem 0"
   },
   flex: {
-    display: "flex"
+    display: "flex",
+    height: 90,
+    boxShadow: "0 2px 6px rgba(0, 0, 0, 0.16)"
   },
   input: {
     borderRadius: 5,
@@ -51,6 +53,7 @@ const styles = theme => ({
   },
   wrapper: {
     maxWidth: 1000,
+    width: "100%",
     margin: "auto",
     marginTop: 0
   },
@@ -73,6 +76,23 @@ const styles = theme => ({
   cvText: {
     color: "white",
     textTransform: "none"
+  },
+  icon: {
+    width: 75,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "& img": {
+      width: 30
+    }
+  },
+  content: {
+    flexGrow: 1,
+    padding: "0.5rem",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "left",
+    justifyContent: "center"
   }
 });
 
@@ -103,31 +123,43 @@ class Contact extends React.Component {
           <Grid container spacing={24}>
             <Grid item xs={12} sm={4} lg={4}>
               <Paper className={classes.flex}>
-                <div>
-                  <Home />
+                <div className={classes.icon}>
+                  <img src="/static/assets/home.png"/>
                 </div>
-                <div>
-                this will be the address
-                </div>
-              </Paper>
-            </Grid>
-            <Grid item xs={12} sm={4} lg={4}>
-              <Paper className={classes.flex}>
-                <div>
-                  <Home />
-                </div>
-                <div>
-                this will be the address
+                <div className={classes.content}>
+                  <Typography>
+                    Navi Mumbai, Mumbai
+                  </Typography>
+                  <Typography>
+                    Maharashtra, India
+                  </Typography>
                 </div>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={4} lg={4}>
               <Paper className={classes.flex}>
-                <div>
-                  <Home />
+                <div className={classes.icon}>
+                  <img src="/static/assets/phone.png"/>
                 </div>
-                <div>
-                this will be another one
+                <div className={classes.content}>
+                  <Typography>
+                    +91 9082199961
+                  </Typography>
+                  <Typography>
+                    +91 9403640602
+                  </Typography>
+                </div>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} sm={4} lg={4}>
+              <Paper className={classes.flex}>
+                <div className={classes.icon}>
+                  <img src="/static/assets/email.png"/>
+                </div>
+                <div className={classes.content}>
+                  <Typography>
+                    prathamesh.netake@gmail.com
+                  </Typography>
                 </div>
               </Paper>
             </Grid>
