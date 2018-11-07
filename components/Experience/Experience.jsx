@@ -98,7 +98,7 @@ function Home(props) {
         </div>
         <div className={classes.edu}>
           <Typography variant="title">
-            Education
+            Work
           </Typography>
           <div className={classes.data}>
             <div className={classes.caption}>

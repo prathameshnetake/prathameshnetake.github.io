@@ -77,7 +77,9 @@ function ButtonAppBar(props) {
               </Link>
             </li>
             <li>
-              <Button className={classnames(classes.navLink, {active: active === "contact"})}>Contact</Button>
+              <Link href="/contact" prefetch>
+                <Button className={classnames(classes.navLink, {active: active === "contact"})}>Contact</Button>
+              </Link>
             </li>
           </ul>
         </Toolbar>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-import About from "../components/About/About.jsx";
+import Conact from "../components/Contact/Contact.jsx";
 import Head from "next/head";
 
 const styles = () => ({
@@ -19,13 +19,12 @@ function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>About | Prathamesh Netake Portfolio
-        </title>
+        <title>Contact | Prathamesh Netake</title>
       </Head>
       <div className={classes.mainWrapper}>
-        <Navbar active="about"/>
+        <Navbar active="contact"/>
         <Footer />
-        <About />
+        <Conact />
       </div>
     </React.Fragment>
   );
