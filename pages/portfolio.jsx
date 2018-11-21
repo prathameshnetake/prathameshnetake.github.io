@@ -4,6 +4,7 @@ import {withStyles} from "@material-ui/core/styles";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Portfolio from "../components/Portfolio/Portfolio.jsx";
+import Head from "next/head";
 
 const styles = () => ({
   mainWrapper: {
@@ -17,6 +18,9 @@ function MyApp(props) {
   const {classes} = props;
   return (
     <React.Fragment>
+      <Head>
+        <title>Blogs | Prathamesh Netake</title>
+      </Head>
       <div className={classes.mainWrapper}>
         <Navbar active="portfolio"/>
         <Footer />

@@ -10,6 +10,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Preloader from "../Preloader/Preloader.jsx";
 import moment from "moment";
 
 const blogData = require("../../content/blogs.json");
@@ -40,11 +41,12 @@ const styles = () => ({
 
 class Portfolio extends React.Component {
   state = {
-    blogs: []
+    blogs: [],
+    showLoader: true
   }
   getBlogData = async () => {
     get(blogData.rss2json, response => {
-      this.setState({blogs: response.item});
+      this.setState({blogs: response.item, showLoader: false});
     });
   }
   componentDidMount = () => {
@@ -59,9 +61,13 @@ class Portfolio extends React.Component {
 
   render() {
     const {classes} = this.props;
+    const {showLoader} = this.state;
     return (
       <div className={classes.root}>
-        <Typography variant="button" color="primary" className={classes.title}>Blogs</Typography>
+        {showLoader && <Preloader />}
+        <Typography variant="button" color="primary" className={classes.title}>
+          {showLoader ? "Getting blogs" : "blogs"}
+        </Typography>
         <Grid container spacing={24}>
           {this.state.blogs.map(blog => {
             const description = blog["content:encoded"][0];
