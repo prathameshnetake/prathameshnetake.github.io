@@ -14,11 +14,17 @@ const url = require("../../content/blogs.json");
 const styles = theme => ({
   root: {
     flexGrow: 1,
+    overflow: "scroll",
     marginLeft: 50,
+    marginBottom: 30,
     backgroundPosition: 0,
     display: "flex",
     flexDirection: "column",
-    padding: "2rem"
+    padding: "2rem",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 0,
+      padding: "1rem"
+    }
   },
   title: {
     fontSize: "1.5rem",

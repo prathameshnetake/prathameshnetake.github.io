@@ -15,15 +15,20 @@ import moment from "moment";
 
 const blogData = require("../../content/blogs.json");
 
-const styles = () => ({
+const styles = theme => ({
   root: {
     flexGrow: 1,
+    overflow: "scroll",
     marginLeft: 50,
+    marginBottom: 30,
     backgroundPosition: 0,
     display: "flex",
     flexDirection: "column",
     padding: "2rem",
-    overflow: "scroll"
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 0,
+      padding: "1rem"
+    }
   },
   title: {
     fontSize: "1.5rem",
