@@ -5,6 +5,9 @@ import {withStyles} from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import Drawer from "../Drawer/Drawer.jsx";
 import Link from "next/link";
 
 const styles = theme => ({
@@ -15,7 +18,10 @@ const styles = theme => ({
   },
   appBar: {
     backgroundColor: "transparent",
-    boxShadow: "none"
+    boxShadow: "none",
+    [theme.breakpoints.down("sm")]: {
+      backgroundColor: theme.palette.primary.main
+    }
   },
   navList: {
     display: "flex",
@@ -46,46 +52,81 @@ const styles = theme => ({
       background: "black",
       borderBottom: `3px solid ${theme.palette.primary.main}`
     }
+  },
+  tool: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none"
+    }
+  },
+  mobile: {
+    [theme.breakpoints.up("sm")]: {
+      display: "none"
+    }
   }
 });
 
-function ButtonAppBar(props) {
-  const {classes, active} = props;
-  return (
-    <div className={classes.root}>
-      <AppBar position="static" className={classes.appBar}>
-        <Toolbar>
-          <ul className={classes.navList}>
-            <li>
-              <Link href="/">
-                <Button className={classnames(classes.navLink, {active: active === "home"})}>Home</Button>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" prefetch>
-                <Button className={classnames(classes.navLink, {active: active === "about"})}>About</Button>
-              </Link>
-            </li>
-            <li>
-              <Link href="/portfolio" prefetch>
-                <Button className={classnames(classes.navLink, {active: active === "portfolio"})}>Portfolio</Button>
-              </Link>
-            </li>
-            <li>
-              <Link href="/experience" prefetch>
-                <Button className={classnames(classes.navLink, {active: active === "experience"})}>Experience</Button>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" prefetch>
-                <Button className={classnames(classes.navLink, {active: active === "contact"})}>Contact</Button>
-              </Link>
-            </li>
-          </ul>
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
+const port = () => {
+  window.location = "/portfolio";
+};
+
+class ButtonAppBar extends React.Component {
+  state = {
+    drawerOpen: false
+  }
+
+  handleDrawerClose = () => {
+    this.setState({drawerOpen: false});
+    this.forceUpdate();
+  }
+
+  openDrawer = () => {
+    this.setState({drawerOpen: true});
+  }
+
+  render() {
+    const {classes, active} = this.props;
+    return (
+      <div className={classes.root}>
+        <Drawer open={this.state.drawerOpen} handleClose={this.handleDrawerClose} active={this.props.active}/>
+        <AppBar position="static" className={classes.appBar}>
+          <Toolbar className={classes.tool}>
+            <ul className={classes.navList}>
+              <li>
+                <Link href="/">
+                  <Button className={classnames(classes.navLink, {active: active === "home"})}>Home</Button>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" prefetch>
+                  <Button className={classnames(classes.navLink, {active: active === "about"})}>About</Button>
+                </Link>
+              </li>
+              <li>
+                <Link href="/portfolio" prefetch>
+                  <Button className={classnames(classes.navLink, {active: active === "portfolio"})} onClick={port}>Portfolio</Button>
+                </Link>
+              </li>
+              <li>
+                <Link href="/experience" prefetch>
+                  <Button className={classnames(classes.navLink, {active: active === "experience"})}>Experience</Button>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" prefetch>
+                  <Button className={classnames(classes.navLink, {active: active === "contact"})}>Contact</Button>
+                </Link>
+              </li>
+            </ul>
+          </Toolbar>
+          <Toolbar className={classes.mobile}>
+            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.openDrawer}>
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+      </div>
+    );
+  }
 }
 
 ButtonAppBar.propTypes = {

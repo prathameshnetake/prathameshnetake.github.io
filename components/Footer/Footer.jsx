@@ -12,7 +12,10 @@ const styles = theme => ({
     borderRight: `1px solid ${theme.palette.secondary.light}`,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center"
+    justifyContent: "center",
+    [theme.breakpoints.down("sm")]: {
+      display: "none"
+    }
   },
   socialList: {
     padding: 0,

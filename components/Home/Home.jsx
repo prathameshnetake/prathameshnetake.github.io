@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import pink from "@material-ui/core/colors/pink";
 import CVButton from "../CVButton/CVButton.jsx";
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     marginLeft: 50,
+    marginBottom: 30,
     backgroundImage: "url(/static/assets/desk.svg)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
@@ -16,23 +16,12 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    padding: "2rem"
-  },
-  cvBtn: {
-    width: 200,
-    height: 50,
-    borderRadius: "25px",
-    background: theme.palette.primary.main,
-    color: "white",
-    margin: "1rem 0",
-    boxShadow: "none",
-    "&:hover": {
-      background: pink[600]
+    padding: "2rem",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 0,
+      padding: "1rem",
+      backgroundPosition: "bottom"
     }
-  },
-  cvText: {
-    color: "white",
-    textTransform: "none"
   }
 });
 
