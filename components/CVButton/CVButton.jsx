@@ -26,7 +26,7 @@ const styles = theme => ({
 
 const handleClick = () => {
   setTimeout(() => {
-    const win = window.open("/static/resume.pdf", "_blank");
+    const win = window.open("/static/Prathamesh_Netake_fullStack_JS_Dev_Resume.pdf", "_blank");
     win.focus();
   }, 250);
 };
