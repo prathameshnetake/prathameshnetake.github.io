@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/contact.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\contact.js"],{
 
 /***/ "./components/Contact/Contact.jsx":
 /*!****************************************!*\
@@ -29,7 +29,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_colors_pink__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors_pink__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_9__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Contact/Contact.jsx";
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "./node_modules/@material-ui/core/CircularProgress/index.js");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10__);
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\components\\Contact\\Contact.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -50,6 +52,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -151,6 +154,14 @@ var styles = function styles(theme) {
       flexDirection: "column",
       alignItems: "left",
       justifyContent: "center"
+    },
+    buttonProgress: {
+      color: _material_ui_core_colors_pink__WEBPACK_IMPORTED_MODULE_8___default.a[200],
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      marginTop: -12,
+      marginLeft: -12
     }
   };
 };
@@ -176,7 +187,11 @@ function (_React$Component) {
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
       name: "",
       email: "",
-      msg: ""
+      msg: "",
+      done: false,
+      notDone: true,
+      inProgress: false,
+      error: false
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleInputChange", function (name) {
@@ -185,10 +200,34 @@ function (_React$Component) {
       };
     });
 
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "resetForm", function () {
+      _this.setState({
+        name: "",
+        email: "",
+        msg: ""
+      });
+    });
+
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "send", function () {
+      _this.setState({
+        inProgress: true
+      });
+
       Object(jquery__WEBPACK_IMPORTED_MODULE_9__["post"])(url.email, JSON.stringify(_this.state), function (err, data) {
-        console.log(err);
         console.log(data);
+        console.log(err);
+
+        _this.setState({
+          inProgress: false,
+          done: true
+        });
+
+        _this.resetForm(); // if (err) {
+        //   this.setState({err: true});
+        //   setTimeout(() => this.setState({notDone: true, err: false}), 2000);
+        //   return;
+        // }
+
       }, "json");
     });
 
@@ -203,7 +242,7 @@ function (_React$Component) {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 150
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -212,14 +251,14 @@ function (_React$Component) {
         className: classes.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 151
         },
         __self: this
       }, "contact me"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.wrapper,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 152
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -227,7 +266,7 @@ function (_React$Component) {
         spacing: 24,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 153
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -237,47 +276,47 @@ function (_React$Component) {
         lg: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 154
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_5___default.a, {
         className: classes.flex,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 155
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.icon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 156
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/assets/home.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132
+          lineNumber: 157
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.content,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 159
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 160
         },
         __self: this
       }, "Navi Mumbai, Mumbai"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 163
         },
         __self: this
       }, "Maharashtra, India")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -287,47 +326,47 @@ function (_React$Component) {
         lg: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 169
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_5___default.a, {
         className: classes.flex,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 170
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.icon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 171
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/assets/phone.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 147
+          lineNumber: 172
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.content,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149
+          lineNumber: 174
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 175
         },
         __self: this
       }, "+91 9082199961"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 178
         },
         __self: this
       }, "+91 9403640602")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -337,41 +376,41 @@ function (_React$Component) {
         lg: 4,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 184
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_5___default.a, {
         className: classes.flex,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 185
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.icon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 161
+          lineNumber: 186
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/static/assets/email.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 187
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.content,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 189
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 190
         },
         __self: this
       }, "prathamesh.netake@gmail.com"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -379,7 +418,7 @@ function (_React$Component) {
         spacing: 24,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 197
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -390,7 +429,7 @@ function (_React$Component) {
         className: classes.ipGrid,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 198
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Input__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -400,7 +439,7 @@ function (_React$Component) {
         onChange: this.handleInputChange("name"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 199
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -411,7 +450,7 @@ function (_React$Component) {
         className: classes.ipGrid,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181
+          lineNumber: 206
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Input__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -421,7 +460,7 @@ function (_React$Component) {
         onChange: this.handleInputChange("email"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 182
+          lineNumber: 207
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -432,7 +471,7 @@ function (_React$Component) {
         className: classes.ipGrid,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 189
+          lineNumber: 214
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Input__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -443,7 +482,7 @@ function (_React$Component) {
         onChange: this.handleInputChange("msg"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 215
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -451,20 +490,53 @@ function (_React$Component) {
         size: "small",
         className: classes.cvBtn,
         onClick: this.send,
+        disabled: this.state.done || this.state.inProgress,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199
+          lineNumber: 224
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }, this.state.notDone && !this.state.inProgress && !this.state.done ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
         variant: "subheading",
         className: classes.cvText,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 200
+          lineNumber: 225
         },
         __self: this
-      }, "Send"))));
+      }, "Send") : null, this.state.error ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "subheading",
+        className: classes.cvText,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 228
+        },
+        __self: this
+      }, "Error try again") : null, this.state.inProgress ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "subheading",
+        className: classes.cvText,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 231
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        size: 24,
+        className: classes.buttonProgress,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 232
+        },
+        __self: this
+      })) : null, this.state.done ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        variant: "subheading",
+        className: classes.cvText,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 234
+        },
+        __self: this
+      }, "Thank you!") : null)));
     }
   }]);
 
@@ -503,7 +575,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Divider */ "./node_modules/@material-ui/core/Divider/index.js");
 /* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Drawer/Drawer.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\components\\Drawer\\Drawer.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -919,7 +991,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Footer/Footer.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\components\\Footer\\Footer.jsx";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -1101,7 +1173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Drawer_Drawer_jsx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Drawer/Drawer.jsx */ "./components/Drawer/Drawer.jsx");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/Navbar/Navbar.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\components\\Navbar\\Navbar.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -2968,9 +3040,15 @@ var styles = function styles(theme) {
 
     /* Styles applied to the root element if `variant="outlined"` and `color="primary"`. */
     outlinedPrimary: {
+      color: theme.palette.primary.main,
       border: "1px solid ".concat((0, _colorManipulator.fade)(theme.palette.primary.main, 0.5)),
       '&:hover': {
-        border: "1px solid ".concat(theme.palette.primary.main)
+        border: "1px solid ".concat(theme.palette.primary.main),
+        backgroundColor: (0, _colorManipulator.fade)(theme.palette.primary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
       },
       '&$disabled': {
         border: "1px solid ".concat(theme.palette.action.disabled)
@@ -2979,9 +3057,15 @@ var styles = function styles(theme) {
 
     /* Styles applied to the root element if `variant="outlined"` and `color="secondary"`. */
     outlinedSecondary: {
+      color: theme.palette.secondary.main,
       border: "1px solid ".concat((0, _colorManipulator.fade)(theme.palette.secondary.main, 0.5)),
       '&:hover': {
-        border: "1px solid ".concat(theme.palette.secondary.main)
+        border: "1px solid ".concat(theme.palette.secondary.main),
+        backgroundColor: (0, _colorManipulator.fade)(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
       },
       '&$disabled': {
         border: "1px solid ".concat(theme.palette.action.disabled)
@@ -3135,7 +3219,7 @@ function Button(props) {
       other = (0, _objectWithoutProperties2.default)(props, ["children", "classes", "className", "color", "disabled", "disableFocusRipple", "focusVisibleClassName", "fullWidth", "mini", "size", "variant"]);
   var fab = variant === 'fab' || variant === 'extendedFab';
   var contained = variant === 'contained' || variant === 'raised';
-  var text = variant === 'text' || variant === 'flat' || variant === 'outlined';
+  var text = variant === 'text' || variant === 'flat';
   var className = (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes.fab, fab), (0, _defineProperty2.default)(_classNames, classes.mini, fab && mini), (0, _defineProperty2.default)(_classNames, classes.extendedFab, variant === 'extendedFab'), (0, _defineProperty2.default)(_classNames, classes.text, text), (0, _defineProperty2.default)(_classNames, classes.textPrimary, text && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.textSecondary, text && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.flat, variant === 'text' || variant === 'flat'), (0, _defineProperty2.default)(_classNames, classes.flatPrimary, (variant === 'text' || variant === 'flat') && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.flatSecondary, (variant === 'text' || variant === 'flat') && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.contained, contained || fab), (0, _defineProperty2.default)(_classNames, classes.containedPrimary, (contained || fab) && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.containedSecondary, (contained || fab) && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.raised, contained || fab), (0, _defineProperty2.default)(_classNames, classes.raisedPrimary, (contained || fab) && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.raisedSecondary, (contained || fab) && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes.outlined, variant === 'outlined'), (0, _defineProperty2.default)(_classNames, classes.outlinedPrimary, variant === 'outlined' && color === 'primary'), (0, _defineProperty2.default)(_classNames, classes.outlinedSecondary, variant === 'outlined' && color === 'secondary'), (0, _defineProperty2.default)(_classNames, classes["size".concat((0, _helpers.capitalize)(size))], size !== 'medium'), (0, _defineProperty2.default)(_classNames, classes.disabled, disabled), (0, _defineProperty2.default)(_classNames, classes.fullWidth, fullWidth), (0, _defineProperty2.default)(_classNames, classes.colorInherit, color === 'inherit'), _classNames), classNameProp);
   return _react.default.createElement(_ButtonBase.default, (0, _extends2.default)({
     className: className,
@@ -4416,7 +4500,11 @@ var createRippleHandler = function createRippleHandler(instance, eventName, acti
 /* istanbul ignore if */
 
 
-if (false) {}
+if (typeof window === 'undefined') {
+  createRippleHandler = function createRippleHandler() {
+    return function () {};
+  };
+}
 
 var _default = createRippleHandler;
 exports.default = _default;
@@ -4516,6 +4604,279 @@ Object.defineProperty(exports, "default", {
 });
 
 var _ButtonBase = _interopRequireDefault(__webpack_require__(/*! ./ButtonBase */ "./node_modules/@material-ui/core/ButtonBase/ButtonBase.js"));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/CircularProgress/CircularProgress.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@material-ui/core/CircularProgress/CircularProgress.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.styles = void 0;
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
+
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
+
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
+
+var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
+
+var _helpers = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/utils/helpers.js");
+
+var SIZE = 44;
+
+function getRelativeValue(value, min, max) {
+  var clampedValue = Math.min(Math.max(min, value), max);
+  return (clampedValue - min) / (max - min);
+}
+
+function easeOut(t) {
+  t = getRelativeValue(t, 0, 1); // https://gist.github.com/gre/1650294
+
+  t = (t -= 1) * t * t + 1;
+  return t;
+}
+
+function easeIn(t) {
+  return t * t;
+}
+
+var styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      display: 'inline-block',
+      lineHeight: 1 // Keep the progress centered
+
+    },
+
+    /* Styles applied to the root element if `variant="static"`. */
+    static: {
+      transition: theme.transitions.create('transform')
+    },
+
+    /* Styles applied to the root element if `variant="indeterminate"`. */
+    indeterminate: {
+      animation: 'mui-progress-circular-rotate 1.4s linear infinite'
+    },
+
+    /* Styles applied to the root element if `color="primary"`. */
+    colorPrimary: {
+      color: theme.palette.primary.main
+    },
+
+    /* Styles applied to the root element if `color="secondary"`. */
+    colorSecondary: {
+      color: theme.palette.secondary.main
+    },
+
+    /* Styles applied to the `svg` element. */
+    svg: {},
+
+    /* Styles applied to the `circle` svg path. */
+    circle: {
+      stroke: 'currentColor' // Use butt to follow the specification, by chance, it's already the default CSS value.
+      // strokeLinecap: 'butt',
+
+    },
+
+    /* Styles applied to the `circle` svg path if `variant="static"`. */
+    circleStatic: {
+      transition: theme.transitions.create('stroke-dashoffset')
+    },
+
+    /* Styles applied to the `circle` svg path if `variant="indeterminate"`. */
+    circleIndeterminate: {
+      animation: 'mui-progress-circular-dash 1.4s ease-in-out infinite',
+      // Some default value that looks fine waiting for the animation to kicks in.
+      strokeDasharray: '80px, 200px',
+      strokeDashoffset: '0px' // Add the unit to fix a Edge 16 and below bug.
+
+    },
+    '@keyframes mui-progress-circular-rotate': {
+      '100%': {
+        transform: 'rotate(360deg)'
+      }
+    },
+    '@keyframes mui-progress-circular-dash': {
+      '0%': {
+        strokeDasharray: '1px, 200px',
+        strokeDashoffset: '0px'
+      },
+      '50%': {
+        strokeDasharray: '100px, 200px',
+        strokeDashoffset: '-15px'
+      },
+      '100%': {
+        strokeDasharray: '100px, 200px',
+        strokeDashoffset: '-120px'
+      }
+    }
+  };
+};
+/**
+ * ## ARIA
+ *
+ * If the progress bar is describing the loading progress of a particular region of a page,
+ * you should use `aria-describedby` to point to the progress bar, and set the `aria-busy`
+ * attribute to `true` on that region until it has finished loading.
+ */
+
+
+exports.styles = styles;
+
+function CircularProgress(props) {
+  var _classNames, _classNames2;
+
+  var classes = props.classes,
+      className = props.className,
+      color = props.color,
+      size = props.size,
+      style = props.style,
+      thickness = props.thickness,
+      value = props.value,
+      variant = props.variant,
+      other = (0, _objectWithoutProperties2.default)(props, ["classes", "className", "color", "size", "style", "thickness", "value", "variant"]);
+  var circleStyle = {};
+  var rootStyle = {};
+  var rootProps = {};
+
+  if (variant === 'determinate' || variant === 'static') {
+    var circumference = 2 * Math.PI * ((SIZE - thickness) / 2);
+    circleStyle.strokeDasharray = circumference.toFixed(3);
+    rootProps['aria-valuenow'] = Math.round(value);
+
+    if (variant === 'static') {
+      circleStyle.strokeDashoffset = "".concat(((100 - value) / 100 * circumference).toFixed(3), "px");
+      rootStyle.transform = 'rotate(-90deg)';
+    } else {
+      circleStyle.strokeDashoffset = "".concat((easeIn((100 - value) / 100) * circumference).toFixed(3), "px");
+      rootStyle.transform = "rotate(".concat((easeOut(value / 70) * 270).toFixed(3), "deg)");
+    }
+  }
+
+  return _react.default.createElement("div", (0, _extends2.default)({
+    className: (0, _classnames.default)(classes.root, (_classNames = {}, (0, _defineProperty2.default)(_classNames, classes["color".concat((0, _helpers.capitalize)(color))], color !== 'inherit'), (0, _defineProperty2.default)(_classNames, classes.indeterminate, variant === 'indeterminate'), (0, _defineProperty2.default)(_classNames, classes.static, variant === 'static'), _classNames), className),
+    style: (0, _extends2.default)({
+      width: size,
+      height: size
+    }, rootStyle, style),
+    role: "progressbar"
+  }, rootProps, other), _react.default.createElement("svg", {
+    className: classes.svg,
+    viewBox: "".concat(SIZE / 2, " ").concat(SIZE / 2, " ").concat(SIZE, " ").concat(SIZE)
+  }, _react.default.createElement("circle", {
+    className: (0, _classnames.default)(classes.circle, (_classNames2 = {}, (0, _defineProperty2.default)(_classNames2, classes.circleIndeterminate, variant === 'indeterminate'), (0, _defineProperty2.default)(_classNames2, classes.circleStatic, variant === 'static'), _classNames2)),
+    style: circleStyle,
+    cx: SIZE,
+    cy: SIZE,
+    r: (SIZE - thickness) / 2,
+    fill: "none",
+    strokeWidth: thickness
+  })));
+}
+
+CircularProgress.propTypes =  true ? {
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css-api) below for more details.
+   */
+  classes: _propTypes.default.object.isRequired,
+
+  /**
+   * @ignore
+   */
+  className: _propTypes.default.string,
+
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   */
+  color: _propTypes.default.oneOf(['primary', 'secondary', 'inherit']),
+
+  /**
+   * The size of the circle.
+   */
+  size: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]),
+
+  /**
+   * @ignore
+   */
+  style: _propTypes.default.object,
+
+  /**
+   * The thickness of the circle.
+   */
+  thickness: _propTypes.default.number,
+
+  /**
+   * The value of the progress indicator for the determinate and static variants.
+   * Value between 0 and 100.
+   */
+  value: _propTypes.default.number,
+
+  /**
+   * The variant to use.
+   * Use indeterminate when there is no progress value.
+   */
+  variant: _propTypes.default.oneOf(['determinate', 'indeterminate', 'static'])
+} : undefined;
+CircularProgress.defaultProps = {
+  color: 'primary',
+  size: 40,
+  thickness: 3.6,
+  value: 0,
+  variant: 'indeterminate'
+};
+
+var _default = (0, _withStyles.default)(styles, {
+  name: 'MuiCircularProgress',
+  flip: false
+})(CircularProgress);
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/CircularProgress/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@material-ui/core/CircularProgress/index.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function get() {
+    return _CircularProgress.default;
+  }
+});
+
+var _CircularProgress = _interopRequireDefault(__webpack_require__(/*! ./CircularProgress */ "./node_modules/@material-ui/core/CircularProgress/CircularProgress.js"));
 
 /***/ }),
 
@@ -5745,7 +6106,7 @@ var styles = function styles(theme) {
       padding: 12,
       borderRadius: '50%',
       overflow: 'visible',
-      // Explicitly set the default value to solve a bug on IE11.
+      // Explicitly set the default value to solve a bug on IE 11.
       color: theme.palette.action.active,
       transition: theme.transitions.create('background-color', {
         duration: theme.transitions.duration.shortest
@@ -5966,7 +6327,7 @@ var styles = function styles(theme) {
         borderBottom: "2px solid ".concat(theme.palette.primary[light ? 'dark' : 'light']),
         left: 0,
         bottom: 0,
-        // Doing the other way around crash on IE11 "''" https://github.com/cssinjs/jss/issues/242
+        // Doing the other way around crash on IE 11 "''" https://github.com/cssinjs/jss/issues/242
         content: '""',
         position: 'absolute',
         right: 0,
@@ -5990,7 +6351,7 @@ var styles = function styles(theme) {
         borderBottom: "1px solid ".concat(bottomLineColor),
         left: 0,
         bottom: 0,
-        // Doing the other way around crash on IE11 "''" https://github.com/cssinjs/jss/issues/242
+        // Doing the other way around crash on IE 11 "''" https://github.com/cssinjs/jss/issues/242
         content: '"\\00a0"',
         position: 'absolute',
         right: 0,
@@ -6361,7 +6722,7 @@ var styles = function styles(theme) {
       // Make the flex item shrink with Firefox
       minWidth: 0,
       width: '100%',
-      // Fix IE11 width issue
+      // Fix IE 11 width issue
       '&::-webkit-input-placeholder': placeholder,
       '&::-moz-placeholder': placeholder,
       // Firefox 19+
@@ -6476,7 +6837,7 @@ function (_React$Component) {
     };
 
     _this.handleFocus = function (event) {
-      // Fix a bug with IE11 where the focus/blur events are triggered
+      // Fix a bug with IE 11 where the focus/blur events are triggered
       // while the input is disabled.
       if (formControlState({
         props: _this.props,
@@ -7052,15 +7413,11 @@ var Textarea =
 function (_React$Component) {
   (0, _inherits2.default)(Textarea, _React$Component);
 
-  // Corresponds to 10 frames at 60 Hz.
   function Textarea(props) {
     var _this;
 
     (0, _classCallCheck2.default)(this, Textarea);
     _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Textarea).call(this));
-    _this.handleResize = (0, _debounce.default)(function () {
-      _this.syncHeightWithShadow();
-    }, 166);
 
     _this.handleRefInput = function (ref) {
       _this.inputRef = ref;
@@ -7097,6 +7454,13 @@ function (_React$Component) {
     _this.state = {
       height: Number(props.rows) * ROWS_HEIGHT
     };
+
+    if (typeof window !== 'undefined') {
+      _this.handleResize = (0, _debounce.default)(function () {
+        _this.syncHeightWithShadow();
+      }, 166); // Corresponds to 10 frames at 60 Hz.
+    }
+
     return _this;
   }
 
@@ -7255,7 +7619,9 @@ Textarea.defaultProps = {
   rows: 1
 };
 
-var _default = (0, _withStyles.default)(styles)(Textarea);
+var _default = (0, _withStyles.default)(styles, {
+  name: 'MuiPrivateTextarea'
+})(Textarea);
 
 exports.default = _default;
 
@@ -7399,6 +7765,8 @@ var _ModalManager = _interopRequireDefault(__webpack_require__(/*! ./ModalManage
 
 var _Backdrop = _interopRequireDefault(__webpack_require__(/*! ../Backdrop */ "./node_modules/@material-ui/core/Backdrop/index.js"));
 
+var _manageAriaHidden = __webpack_require__(/*! ./manageAriaHidden */ "./node_modules/@material-ui/core/Modal/manageAriaHidden.js");
+
 function getContainer(container, defaultContainer) {
   container = typeof container === 'function' ? container() : container;
   return _reactDom.default.findDOMNode(container) || defaultContainer;
@@ -7451,17 +7819,6 @@ function (_React$Component) {
     _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Modal).call(this));
     _this.mounted = false;
 
-    _this.handleRendered = function () {
-      _this.autoFocus(); // Fix a bug on Chrome where the scroll isn't initially 0.
-
-
-      _this.modalRef.scrollTop = 0;
-
-      if (_this.props.onRendered) {
-        _this.props.onRendered();
-      }
-    };
-
     _this.handleOpen = function () {
       var doc = (0, _ownerDocument.default)(_this.mountNode);
       var container = getContainer(_this.props.container, doc.body);
@@ -7470,6 +7827,29 @@ function (_React$Component) {
 
       doc.addEventListener('keydown', _this.handleDocumentKeyDown);
       doc.addEventListener('focus', _this.enforceFocus, true);
+
+      if (_this.dialogRef) {
+        _this.handleOpened();
+      }
+    };
+
+    _this.handleRendered = function () {
+      if (_this.props.onRendered) {
+        _this.props.onRendered();
+      }
+
+      if (_this.props.open) {
+        _this.handleOpened();
+      } else {
+        (0, _manageAriaHidden.ariaHidden)(_this.modalRef, true);
+      }
+    };
+
+    _this.handleOpened = function () {
+      _this.autoFocus(); // Fix a bug on Chrome where the scroll isn't initially 0.
+
+
+      _this.modalRef.scrollTop = 0;
     };
 
     _this.handleClose = function () {
@@ -7486,8 +7866,6 @@ function (_React$Component) {
       _this.setState({
         exited: true
       });
-
-      _this.handleClose();
     };
 
     _this.handleBackdropClick = function (event) {
@@ -7505,12 +7883,8 @@ function (_React$Component) {
     };
 
     _this.handleDocumentKeyDown = function (event) {
-      if (!_this.isTopModal() || (0, _keycode.default)(event) !== 'esc') {
-        return;
-      } // Ignore events that have been `event.preventDefault()` marked.
-
-
-      if (event.defaultPrevented) {
+      // Ignore events that have been `event.preventDefault()` marked.
+      if ((0, _keycode.default)(event) !== 'esc' || !_this.isTopModal() || event.defaultPrevented) {
         return;
       }
 
@@ -7523,20 +7897,29 @@ function (_React$Component) {
       }
     };
 
-    _this.checkForFocus = function () {
-      _this.lastFocus = (0, _ownerDocument.default)(_this.mountNode).activeElement;
-    };
-
     _this.enforceFocus = function () {
-      if (_this.props.disableEnforceFocus || !_this.mounted || !_this.isTopModal()) {
+      // The Modal might not already be mounted.
+      if (!_this.isTopModal() || _this.props.disableEnforceFocus || !_this.mounted || !_this.dialogRef) {
         return;
       }
 
       var currentActiveElement = (0, _ownerDocument.default)(_this.mountNode).activeElement;
 
-      if (_this.dialogRef && !_this.dialogRef.contains(currentActiveElement)) {
+      if (!_this.dialogRef.contains(currentActiveElement)) {
         _this.dialogRef.focus();
       }
+    };
+
+    _this.handlePortalRef = function (ref) {
+      _this.mountNode = ref ? ref.getMountNode() : ref;
+    };
+
+    _this.handleModalRef = function (ref) {
+      _this.modalRef = ref;
+    };
+
+    _this.onRootRef = function (ref) {
+      _this.dialogRef = ref;
     };
 
     _this.state = {
@@ -7557,14 +7940,10 @@ function (_React$Component) {
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps) {
-      if (!prevProps.open && this.props.open) {
-        this.checkForFocus();
-      }
-
-      if (prevProps.open && !this.props.open && !getHasTransition(this.props)) {
-        // Otherwise handleExited will call this.
+      if (prevProps.open && !this.props.open) {
         this.handleClose();
       } else if (!prevProps.open && this.props.open) {
+        this.lastFocus = (0, _ownerDocument.default)(this.mountNode).activeElement;
         this.handleOpen();
       }
     }
@@ -7580,40 +7959,38 @@ function (_React$Component) {
   }, {
     key: "autoFocus",
     value: function autoFocus() {
-      if (this.props.disableAutoFocus) {
+      // We might render an empty child.
+      if (this.props.disableAutoFocus || !this.dialogRef) {
         return;
       }
 
       var currentActiveElement = (0, _ownerDocument.default)(this.mountNode).activeElement;
 
-      if (this.dialogRef && !this.dialogRef.contains(currentActiveElement)) {
-        this.lastFocus = currentActiveElement;
-
+      if (!this.dialogRef.contains(currentActiveElement)) {
         if (!this.dialogRef.hasAttribute('tabIndex')) {
            true ? (0, _warning.default)(false, ['Material-UI: the modal content node does not accept focus.', 'For the benefit of assistive technologies, ' + 'the tabIndex of the node is being set to "-1".'].join('\n')) : undefined;
           this.dialogRef.setAttribute('tabIndex', -1);
         }
 
+        this.lastFocus = currentActiveElement;
         this.dialogRef.focus();
       }
     }
   }, {
     key: "restoreLastFocus",
     value: function restoreLastFocus() {
-      if (this.props.disableRestoreFocus) {
+      if (this.props.disableRestoreFocus || !this.lastFocus) {
         return;
+      } // Not all elements in IE 11 have a focus method.
+      // Because IE 11 market share is low, we accept the restore focus being broken
+      // and we silent the issue.
+
+
+      if (this.lastFocus.focus) {
+        this.lastFocus.focus();
       }
 
-      if (this.lastFocus) {
-        // Not all elements in IE11 have a focus method.
-        // Because IE11 market share is low, we accept the restore focus being broken
-        // and we silent the issue.
-        if (this.lastFocus.focus) {
-          this.lastFocus.focus();
-        }
-
-        this.lastFocus = null;
-      }
+      this.lastFocus = null;
     }
   }, {
     key: "isTopModal",
@@ -7623,8 +8000,6 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       var _this$props = this.props,
           BackdropComponent = _this$props.BackdropComponent,
           BackdropProps = _this$props.BackdropProps,
@@ -7649,12 +8024,12 @@ function (_React$Component) {
           other = (0, _objectWithoutProperties2.default)(_this$props, ["BackdropComponent", "BackdropProps", "children", "classes", "className", "container", "disableAutoFocus", "disableBackdropClick", "disableEnforceFocus", "disableEscapeKeyDown", "disablePortal", "disableRestoreFocus", "hideBackdrop", "keepMounted", "manager", "onBackdropClick", "onClose", "onEscapeKeyDown", "onRendered", "open"]);
       var exited = this.state.exited;
       var hasTransition = getHasTransition(this.props);
-      var childProps = {};
 
       if (!keepMounted && !open && (!hasTransition || exited)) {
         return null;
-      } // It's a Transition like component
+      }
 
+      var childProps = {}; // It's a Transition like component
 
       if (hasTransition) {
         childProps.onExited = (0, _helpers.createChainedFunction)(this.handleExited, children.props.onExited);
@@ -7669,24 +8044,18 @@ function (_React$Component) {
       }
 
       return _react.default.createElement(_Portal.default, {
-        ref: function ref(_ref2) {
-          _this2.mountNode = _ref2 ? _ref2.getMountNode() : _ref2;
-        },
+        ref: this.handlePortalRef,
         container: container,
         disablePortal: disablePortal,
         onRendered: this.handleRendered
       }, _react.default.createElement("div", (0, _extends2.default)({
-        ref: function ref(_ref) {
-          _this2.modalRef = _ref;
-        },
+        ref: this.handleModalRef,
         className: (0, _classnames.default)(classes.root, className, (0, _defineProperty2.default)({}, classes.hidden, exited))
       }, other), hideBackdrop ? null : _react.default.createElement(BackdropComponent, (0, _extends2.default)({
         open: open,
         onClick: this.handleBackdropClick
       }, BackdropProps)), _react.default.createElement(_RootRef.default, {
-        rootRef: function rootRef(ref) {
-          _this2.dialogRef = ref;
-        }
+        rootRef: this.onRootRef
       }, _react.default.cloneElement(children, childProps))));
     }
   }], [{
@@ -7834,6 +8203,7 @@ Modal.propTypes =  true ? {
   open: _propTypes.default.bool.isRequired
 } : undefined;
 Modal.defaultProps = {
+  BackdropComponent: _Backdrop.default,
   disableAutoFocus: false,
   disableBackdropClick: false,
   disableEnforceFocus: false,
@@ -7843,8 +8213,7 @@ Modal.defaultProps = {
   hideBackdrop: false,
   keepMounted: false,
   // Modals don't open on the server so this won't conflict with concurrent requests.
-  manager: new _ModalManager.default(),
-  BackdropComponent: _Backdrop.default
+  manager: new _ModalManager.default()
 };
 
 var _default = (0, _withStyles.default)(styles, {
@@ -7933,11 +8302,11 @@ function setContainerStyle(data, container) {
   });
 }
 
-function removeContainerStyle(data, container) {
+function removeContainerStyle(data) {
   Object.keys(data.style).forEach(function (key) {
-    container.style[key] = data.style[key];
+    data.container.style[key] = data.style[key];
   });
-  var fixedNodes = (0, _ownerDocument.default)(container).querySelectorAll('.mui-fixed');
+  var fixedNodes = (0, _ownerDocument.default)(data.container).querySelectorAll('.mui-fixed');
 
   for (var i = 0; i < fixedNodes.length; i += 1) {
     fixedNodes[i].style.paddingRight = "".concat(data.prevPaddings[i], "px");
@@ -7965,10 +8334,11 @@ function () {
     this.hideSiblingNodes = hideSiblingNodes;
     this.handleContainerOverflow = handleContainerOverflow; // this.modals[modalIdx] = modal
 
-    this.modals = []; // this.containers[containerIdx] = container
-
-    this.containers = []; // this.data[containerIdx] = {
+    this.modals = []; // this.data[containerIdx] = {
     //   modals: [],
+    //   container,
+    //   overflowing,
+    //   prevPaddings,
     // }
 
     this.data = [];
@@ -7984,13 +8354,19 @@ function () {
       }
 
       modalIdx = this.modals.length;
-      this.modals.push(modal);
+      this.modals.push(modal); // If the modal we are adding is already in the DOM.
 
-      if (this.hideSiblingNodes) {
-        (0, _manageAriaHidden.hideSiblings)(container, modal.mountNode);
+      if (modal.modalRef) {
+        (0, _manageAriaHidden.ariaHidden)(modal.modalRef, false);
       }
 
-      var containerIdx = this.containers.indexOf(container);
+      if (this.hideSiblingNodes) {
+        (0, _manageAriaHidden.ariaHiddenSiblings)(container, modal.mountNode, modal.modalRef, true);
+      }
+
+      var containerIdx = findIndexOf(this.data, function (item) {
+        return item.container === container;
+      });
 
       if (containerIdx !== -1) {
         this.data[containerIdx].modals.push(modal);
@@ -7999,6 +8375,7 @@ function () {
 
       var data = {
         modals: [modal],
+        container: container,
         overflowing: (0, _isOverflowing.default)(container),
         prevPaddings: []
       };
@@ -8007,7 +8384,6 @@ function () {
         setContainerStyle(data, container);
       }
 
-      this.containers.push(container);
       this.data.push(data);
       return modalIdx;
     }
@@ -8024,24 +8400,33 @@ function () {
         return item.modals.indexOf(modal) !== -1;
       });
       var data = this.data[containerIdx];
-      var container = this.containers[containerIdx];
       data.modals.splice(data.modals.indexOf(modal), 1);
       this.modals.splice(modalIdx, 1); // If that was the last modal in a container, clean up the container.
 
       if (data.modals.length === 0) {
         if (this.handleContainerOverflow) {
-          removeContainerStyle(data, container);
+          removeContainerStyle(data);
+        } // In case the modal wasn't in the DOM yet.
+
+
+        if (modal.modalRef) {
+          (0, _manageAriaHidden.ariaHidden)(modal.modalRef, true);
         }
 
         if (this.hideSiblingNodes) {
-          (0, _manageAriaHidden.showSiblings)(container, modal.mountNode);
+          (0, _manageAriaHidden.ariaHiddenSiblings)(data.container, modal.mountNode, modal.modalRef, false);
         }
 
-        this.containers.splice(containerIdx, 1);
         this.data.splice(containerIdx, 1);
       } else if (this.hideSiblingNodes) {
         // Otherwise make sure the next top modal is visible to a screan reader.
-        (0, _manageAriaHidden.ariaHidden)(false, data.modals[data.modals.length - 1].mountNode);
+        var nextTop = data.modals[data.modals.length - 1]; // as soon as a modal is adding its modalRef is undefined. it can't set
+        // aria-hidden because the dom element doesn't exist either
+        // when modal was unmounted before modalRef gets null
+
+        if (nextTop.modalRef) {
+          (0, _manageAriaHidden.ariaHidden)(nextTop.modalRef, false);
+        }
       }
 
       return modalIdx;
@@ -8155,29 +8540,24 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.ariaHidden = ariaHidden;
-exports.hideSiblings = hideSiblings;
-exports.showSiblings = showSiblings;
+exports.ariaHiddenSiblings = ariaHiddenSiblings;
 var BLACKLIST = ['template', 'script', 'style'];
 
 function isHidable(node) {
   return node.nodeType === 1 && BLACKLIST.indexOf(node.tagName.toLowerCase()) === -1;
 }
 
-function siblings(container, mount, callback) {
-  mount = [].concat(mount); // eslint-disable-line no-param-reassign
+function siblings(container, mount, currentNode, callback) {
+  var blacklist = [mount, currentNode]; // eslint-disable-line no-param-reassign
 
   [].forEach.call(container.children, function (node) {
-    if (mount.indexOf(node) === -1 && isHidable(node)) {
+    if (blacklist.indexOf(node) === -1 && isHidable(node)) {
       callback(node);
     }
   });
 }
 
-function ariaHidden(show, node) {
-  if (!node) {
-    return;
-  }
-
+function ariaHidden(node, show) {
   if (show) {
     node.setAttribute('aria-hidden', 'true');
   } else {
@@ -8185,15 +8565,9 @@ function ariaHidden(show, node) {
   }
 }
 
-function hideSiblings(container, mountNode) {
-  siblings(container, mountNode, function (node) {
-    return ariaHidden(true, node);
-  });
-}
-
-function showSiblings(container, mountNode) {
-  siblings(container, mountNode, function (node) {
-    return ariaHidden(false, node);
+function ariaHiddenSiblings(container, mountNode, currentNode, show) {
+  siblings(container, mountNode, currentNode, function (node) {
+    return ariaHidden(node, show);
   });
 }
 
@@ -8878,7 +9252,7 @@ var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtim
 
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
 
 var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/inherits.js"));
 
@@ -8965,28 +9339,11 @@ function (_React$Component) {
   (0, _inherits2.default)(Slide, _React$Component);
 
   function Slide() {
-    var _getPrototypeOf2;
-
     var _this;
 
     (0, _classCallCheck2.default)(this, Slide);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(Slide)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Slide).call(this));
     _this.mounted = false;
-    _this.handleResize = (0, _debounce.default)(function () {
-      // Skip configuration where the position is screen size invariant.
-      if (_this.props.in || _this.props.direction === 'down' || _this.props.direction === 'right') {
-        return;
-      }
-
-      if (_this.transitionRef) {
-        setTranslateValue(_this.props, _this.transitionRef);
-      }
-    }, 166);
 
     _this.handleEnter = function (node) {
       setTranslateValue(_this.props, node);
@@ -9044,12 +9401,24 @@ function (_React$Component) {
       }
     };
 
+    if (typeof window !== 'undefined') {
+      _this.handleResize = (0, _debounce.default)(function () {
+        // Skip configuration where the position is screen size invariant.
+        if (_this.props.in || _this.props.direction === 'down' || _this.props.direction === 'right') {
+          return;
+        }
+
+        if (_this.transitionRef) {
+          setTranslateValue(_this.props, _this.transitionRef);
+        }
+      }, 166); // Corresponds to 10 frames at 60 Hz.
+    }
+
     return _this;
   }
 
   (0, _createClass2.default)(Slide, [{
     key: "componentDidMount",
-    // Corresponds to 10 frames at 60 Hz.
     value: function componentDidMount() {
       this.mounted = true; // state.mounted handle SSR, once the component is mounted, we need
       // to properly hide it.
@@ -9582,8 +9951,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.styles = void 0;
 
-var _readOnlyError2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/readOnlyError */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js"));
-
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
 
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
@@ -9892,7 +10259,7 @@ Typography.propTypes =  true ? {
    */
   variant: (0, _chainPropTypes.default)(_propTypes.default.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline', 'srOnly', 'inherit', // deprecated
   'display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading']), function (props) {
-    var deprecatedVariants = ((0, _readOnlyError2.default)("deprecatedVariants"),  true ? ['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'] : undefined);;
+    var deprecatedVariants = ['display4', 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'];
 
     if (props.theme.typography.useNextVariants && !props.internalDeprecatedVariant && deprecatedVariants.indexOf(props.variant) !== -1) {
       return new Error('You are using a deprecated typography variant: ' + "`".concat(props.variant, "` that will be removed in the next major release.") + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2');
@@ -10454,21 +10821,6 @@ function _possibleConstructorReturn(self, call) {
 }
 
 module.exports = _possibleConstructorReturn;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/readOnlyError.js ***!
-  \*********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _readOnlyError(name) {
-  throw new Error("\"" + name + "\" is read-only");
-}
-
-module.exports = _readOnlyError;
 
 /***/ }),
 
@@ -11252,31 +11604,17 @@ function createGenerateClassName() {
   var ruleCounter = 0;
   return function (rule, styleSheet) {
     ruleCounter += 1;
-     true ? (0, _warning.default)(ruleCounter < 1e10, ['Material-UI: you might have a memory leak.', 'The ruleCounter is not supposed to grow that much.'].join('')) : undefined; // Code branch the whole block at the expense of more code.
+     true ? (0, _warning.default)(ruleCounter < 1e10, ['Material-UI: you might have a memory leak.', 'The ruleCounter is not supposed to grow that much.'].join('')) : undefined;
 
-    if (dangerouslyUseGlobalCSS) {
-      if (styleSheet) {
-        if (styleSheet.options.name) {
-          return "".concat(styleSheet.options.name, "-").concat(rule.key);
-        }
-
-        if (styleSheet.options.classNamePrefix && "development" !== 'production') {
-          var prefix = safePrefix(styleSheet.options.classNamePrefix);
-          return "".concat(prefix, "-").concat(rule.key, "-").concat(seed).concat(ruleCounter);
-        }
-      }
-
-      if (false) {}
-
-      return "".concat(rule.key, "-").concat(seed).concat(ruleCounter);
+    if (dangerouslyUseGlobalCSS && styleSheet && styleSheet.options.name) {
+      return "".concat(safePrefix(styleSheet.options.name), "-").concat(rule.key);
     }
 
     if (false) {}
 
     if (styleSheet && styleSheet.options.classNamePrefix) {
-      var _prefix = safePrefix(styleSheet.options.classNamePrefix);
-
-      return "".concat(_prefix, "-").concat(rule.key, "-").concat(seed).concat(ruleCounter);
+      var prefix = safePrefix(styleSheet.options.classNamePrefix);
+      return "".concat(prefix, "-").concat(rule.key, "-").concat(seed).concat(ruleCounter);
     }
 
     return "".concat(rule.key, "-").concat(seed).concat(ruleCounter);
@@ -11591,6 +11929,8 @@ function createPalette(palette) {
     if (!color.contrastText) {
       color.contrastText = getContrastText(color.main);
     }
+
+    return color;
   }
 
   augmentColor(primary);
@@ -11688,7 +12028,7 @@ function round(value) {
 var caseAllCaps = {
   textTransform: 'uppercase'
 };
-var defaultFontFamiliy = '"Roboto", "Helvetica", "Arial", sans-serif';
+var defaultFontFamily = '"Roboto", "Helvetica", "Arial", sans-serif';
 /**
  * @see @link{https://material.io/design/typography/the-type-system.html}
  * @see @link{https://material.io/design/typography/understanding-typography.html}
@@ -11697,7 +12037,7 @@ var defaultFontFamiliy = '"Roboto", "Helvetica", "Arial", sans-serif';
 function createTypography(palette, typography) {
   var _ref = typeof typography === 'function' ? typography(palette) : typography,
       _ref$fontFamily = _ref.fontFamily,
-      fontFamily = _ref$fontFamily === void 0 ? defaultFontFamiliy : _ref$fontFamily,
+      fontFamily = _ref$fontFamily === void 0 ? defaultFontFamily : _ref$fontFamily,
       _ref$fontSize = _ref.fontSize,
       fontSize = _ref$fontSize === void 0 ? 14 : _ref$fontSize,
       _ref$fontWeightLight = _ref.fontWeightLight,
@@ -11710,10 +12050,12 @@ function createTypography(palette, typography) {
       htmlFontSize = _ref$htmlFontSize === void 0 ? 16 : _ref$htmlFontSize,
       _ref$useNextVariants = _ref.useNextVariants,
       useNextVariants = _ref$useNextVariants === void 0 ? Boolean(global.__MUI_USE_NEXT_TYPOGRAPHY_VARIANTS__) : _ref$useNextVariants,
+      _ref$suppressWarning = _ref.suppressWarning,
+      suppressWarning = _ref$suppressWarning === void 0 ? false : _ref$suppressWarning,
       allVariants = _ref.allVariants,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["fontFamily", "fontSize", "fontWeightLight", "fontWeightRegular", "fontWeightMedium", "htmlFontSize", "useNextVariants", "allVariants"]);
+      other = (0, _objectWithoutProperties2.default)(_ref, ["fontFamily", "fontSize", "fontWeightLight", "fontWeightRegular", "fontWeightMedium", "htmlFontSize", "useNextVariants", "suppressWarning", "allVariants"]);
 
-   true ? (0, _warning.default)(useNextVariants, 'Material-UI: you are using the deprecated typography variants ' + 'that will be removed in the next major release.' + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2') : undefined;
+   true ? (0, _warning.default)(useNextVariants || suppressWarning, 'Material-UI: you are using the deprecated typography variants ' + 'that will be removed in the next major release.' + '\nPlease read the migration guide under https://material-ui.com/style/typography#migration-to-typography-v2') : undefined;
   var coef = fontSize / 14;
 
   var pxToRem = function pxToRem(size) {
@@ -11728,7 +12070,7 @@ function createTypography(palette, typography) {
       fontSize: pxToRem(size),
       // Unitless following http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
       lineHeight: lineHeight
-    }, fontFamily === defaultFontFamiliy ? {
+    }, fontFamily === defaultFontFamily ? {
       letterSpacing: "".concat(round(letterSpacing / size), "em")
     } : {}, casing, allVariants);
   };
@@ -12069,11 +12411,13 @@ var _jssVendorPrefixer = _interopRequireDefault(__webpack_require__(/*! jss-vend
 
 var _jssPropsSort = _interopRequireDefault(__webpack_require__(/*! jss-props-sort */ "./node_modules/jss-props-sort/lib/index.js"));
 
-// Subset of jss-preset-default with only the plugins the Material-UI
-// components are using.
+// Subset of jss-preset-default with only the plugins the Material-UI components are using.
 function jssPreset() {
   return {
-    plugins: [(0, _jssGlobal.default)(), (0, _jssNested.default)(), (0, _jssCamelCase.default)(), (0, _jssDefaultUnit.default)(), (0, _jssVendorPrefixer.default)(), (0, _jssPropsSort.default)()]
+    plugins: [(0, _jssGlobal.default)(), (0, _jssNested.default)(), (0, _jssCamelCase.default)(), (0, _jssDefaultUnit.default)(), // Disable the vendor prefixer server-side, it does nothing.
+    // This way, we can get a performance boost.
+    // In the documentation, we are using `autoprefixer` to solve this problem.
+    typeof window === 'undefined' ? null : (0, _jssVendorPrefixer.default)(), (0, _jssPropsSort.default)()]
   };
 }
 
@@ -12115,16 +12459,16 @@ function mergeClasses() {
     return baseClasses;
   }
 
-  return (0, _extends2.default)({}, baseClasses, Object.keys(newClasses).reduce(function (accumulator, key) {
-     true ? (0, _warning.default)(baseClasses[key] || !newClasses[key], ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not implemented in ".concat((0, _getDisplayName.default)(Component), "."), "You can only override one of the following: ".concat(Object.keys(baseClasses).join(','))].join('\n')) : undefined;
+  var nextClasses = (0, _extends2.default)({}, baseClasses);
+  Object.keys(newClasses).forEach(function (key) {
+     true ? (0, _warning.default)(baseClasses[key] || !newClasses[key], ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not implemented in ".concat((0, _getDisplayName.default)(Component), "."), "You can only override one of the following: ".concat(Object.keys(baseClasses).join(','), ".")].join('\n')) : undefined;
      true ? (0, _warning.default)(!newClasses[key] || typeof newClasses[key] === 'string', ["Material-UI: the key `".concat(key, "` ") + "provided to the classes property is not valid for ".concat((0, _getDisplayName.default)(Component), "."), "You need to provide a non empty string instead of: ".concat(newClasses[key], ".")].join('\n')) : undefined;
 
     if (newClasses[key]) {
-      accumulator[key] = "".concat(baseClasses[key], " ").concat(newClasses[key]);
+      nextClasses[key] = "".concat(baseClasses[key], " ").concat(newClasses[key]);
     }
-
-    return accumulator;
-  }, {}));
+  });
+  return nextClasses;
 }
 
 var _default = mergeClasses;
@@ -12532,7 +12876,11 @@ function getDefaultTheme() {
     return defaultTheme;
   }
 
-  defaultTheme = (0, _createMuiTheme.default)();
+  defaultTheme = (0, _createMuiTheme.default)({
+    typography: {
+      suppressWarning: true
+    }
+  });
   return defaultTheme;
 } // Link a style sheet with a component.
 // It does not modify the component passed to it;
@@ -12733,6 +13081,7 @@ var withStyles = function withStyles(stylesOrCreator) {
           var meta = name;
 
           if ("development" !== 'production' && !meta) {
+            // Provide a better DX outside production.
             meta = (0, _getDisplayName.default)(Component);
              true ? (0, _warning.default)(typeof meta === 'string', ['Material-UI: the component displayName is invalid. It needs to be a string.', "Please fix the following component: ".concat(Component, ".")].join('\n')) : undefined;
           }
@@ -12743,7 +13092,7 @@ var withStyles = function withStyles(stylesOrCreator) {
             flip: typeof flip === 'boolean' ? flip : theme.direction === 'rtl',
             link: false
           }, this.sheetOptions, this.stylesCreatorSaved.options, {
-            name: name
+            name: name || Component.displayName
           }, styleSheetOptions));
           return sheet;
         }
@@ -13126,8 +13475,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getFunctionName = getFunctionName;
 exports.default = void 0;
-// Fork of recompose/getDisplayName with added IE11 support
-// Simplified polyfill for IE11 support
+// Fork of recompose/getDisplayName with added IE 11 support
+// Simplified polyfill for IE 11 support
 // https://github.com/JamesMGreene/Function.name/blob/58b314d4a983110c3682f1228f845d39ccca1817/Function.name.js#L3
 var fnNameMatchRegex = /^\s*function(?:\s|\s*\/\*.*\*\/\s*)+([^(\s/]*)\s*/;
 
@@ -35463,12 +35812,12 @@ module.exports = __webpack_require__(/*! ./dist/lib/link */ "./node_modules/next
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_10edf27d814a728d21af ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -35916,12 +36265,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_10edf27d814a728d21af ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -36529,12 +36878,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_10edf27d814a728d21af ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -37280,12 +37629,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_10edf27d814a728d21af ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -38771,12 +39120,12 @@ exports.classNamesShape = classNamesShape;
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_10edf27d814a728d21af ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_10edf27d814a728d21af */ "dll-reference dll_10edf27d814a728d21af"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -40659,7 +41008,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Contact_Contact_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Contact/Contact.jsx */ "./components/Contact/Contact.jsx");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/head */ "./node_modules/next/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/pages/contact.jsx";
+var _jsxFileName = "C:\\Users\\alex\\Documents\\prathamesh\\gitPage\\pages\\contact.jsx";
 
 
 
@@ -40767,14 +41116,14 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_5d62d38be3592dca3a42":
+/***/ "dll-reference dll_10edf27d814a728d21af":
 /*!*******************************************!*\
-  !*** external "dll_5d62d38be3592dca3a42" ***!
+  !*** external "dll_10edf27d814a728d21af" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_5d62d38be3592dca3a42;
+module.exports = dll_10edf27d814a728d21af;
 
 /***/ })
 
