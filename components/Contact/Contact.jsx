@@ -8,6 +8,7 @@ import Input from "@material-ui/core/Input";
 import Button from "@material-ui/core/Button";
 import pink from "@material-ui/core/colors/pink";
 import {post} from "jquery";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 const url = require("../../content/blogs.json");
 
@@ -98,6 +99,14 @@ const styles = theme => ({
     flexDirection: "column",
     alignItems: "left",
     justifyContent: "center"
+  },
+  buttonProgress: {
+    color: pink[200],
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    marginTop: -12,
+    marginLeft: -12
   }
 });
 
@@ -105,17 +114,33 @@ class Contact extends React.Component {
   state = {
     name: "",
     email: "",
-    msg: ""
+    msg: "",
+    done: false,
+    notDone: true,
+    inProgress: false,
+    error: false
   }
 
   handleInputChange = name => evt => {
     this.setState({[name]: evt.target.value});
   }
 
+  resetForm = () => {
+    this.setState({name: "", email: "", msg: ""});
+  }
+
   send = () => {
+    this.setState({inProgress: true});
     post(url.email, JSON.stringify(this.state), (err, data) => {
-      console.log(err);
       console.log(data);
+      console.log(err);
+      this.setState({inProgress: false, done: true});
+      this.resetForm();
+      // if (err) {
+      //   this.setState({err: true});
+      //   setTimeout(() => this.setState({notDone: true, err: false}), 2000);
+      //   return;
+      // }
     }, "json");
   }
 
@@ -196,10 +221,19 @@ class Contact extends React.Component {
               />
             </Grid>
           </Grid>
-          <Button variant="contained" size="small" className={classes.cvBtn} onClick={this.send}>
-            <Typography variant="subheading" className={classes.cvText}>
+          <Button variant="contained" size="small" className={classes.cvBtn} onClick={this.send} disabled={this.state.done || this.state.inProgress}>
+            {this.state.notDone && !this.state.inProgress && !this.state.done ? <Typography variant="subheading" className={classes.cvText}>
               Send
-            </Typography>
+            </Typography> : null}
+            {this.state.error ? <Typography variant="subheading" className={classes.cvText}>
+              Error try again
+            </Typography> : null}
+            {this.state.inProgress ? <Typography variant="subheading" className={classes.cvText}>
+              <CircularProgress size={24} className={classes.buttonProgress} />
+            </Typography> : null}
+            {this.state.done ? <Typography variant="subheading" className={classes.cvText}>
+              Thank you!
+            </Typography> : null}
           </Button>
         </div>
       </div>
