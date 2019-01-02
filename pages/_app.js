@@ -6,7 +6,7 @@ import JssProvider from "react-jss/lib/JssProvider";
 import getPageContext from "../lib/getPageContext";
 import CreditFooter from "../components/CreditFooter/CreditFooter.jsx";
 import {initGA, logPageView} from "../lib/analytics";
-import "./fix.css"
+import "./fix.css";
 
 class MyApp extends App {
   constructor(props) {
