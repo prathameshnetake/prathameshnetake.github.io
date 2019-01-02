@@ -65,10 +65,6 @@ const styles = theme => ({
   }
 });
 
-const port = () => {
-  window.location = "/portfolio";
-};
-
 class ButtonAppBar extends React.Component {
   state = {
     drawerOpen: false
@@ -103,7 +99,7 @@ class ButtonAppBar extends React.Component {
               </li>
               <li>
                 <Link href="/portfolio" prefetch>
-                  <Button className={classnames(classes.navLink, {active: active === "portfolio"})} onClick={port}>Portfolio</Button>
+                  <Button className={classnames(classes.navLink, {active: active === "portfolio"})}>Portfolio</Button>
                 </Link>
               </li>
               <li>
