@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
 
 /***/ "./components/CreditFooter/CreditFooter.jsx":
 /*!**************************************************!*\
@@ -17,7 +17,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/Typography/index.js");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/components/CreditFooter/CreditFooter.jsx";
+var _jsxFileName = "C:\\Users\\Alex\\Documents\\gitpage\\components\\CreditFooter\\CreditFooter.jsx";
 
 
 
@@ -15306,23 +15306,23 @@ function getURL() {
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_18682c416555df0bf0b9 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_18682c416555df0bf0b9 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -15930,12 +15930,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_18682c416555df0bf0b9 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -19796,12 +19796,12 @@ exports['default'] = {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_5d62d38be3592dca3a42 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_18682c416555df0bf0b9 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5d62d38be3592dca3a42 */ "dll-reference dll_5d62d38be3592dca3a42"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -21688,7 +21688,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_analytics__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/analytics */ "./lib/analytics.js");
 /* harmony import */ var _fix_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./fix.css */ "./pages/fix.css");
 /* harmony import */ var _fix_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_fix_css__WEBPACK_IMPORTED_MODULE_8__);
-var _jsxFileName = "/home/aitoe/Documents/prathamesh/gitPage/pages/_app.js";
+var _jsxFileName = "C:\\Users\\Alex\\Documents\\gitpage\\pages\\_app.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -21849,14 +21849,14 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_5d62d38be3592dca3a42":
+/***/ "dll-reference dll_18682c416555df0bf0b9":
 /*!*******************************************!*\
-  !*** external "dll_5d62d38be3592dca3a42" ***!
+  !*** external "dll_18682c416555df0bf0b9" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_5d62d38be3592dca3a42;
+module.exports = dll_18682c416555df0bf0b9;
 
 /***/ })
 
