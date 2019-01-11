@@ -3,21 +3,28 @@ import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import CVButton from "../CVButton/CVButton.jsx";
+import Grid from "@material-ui/core/Grid";
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
+    overflow: "scroll",
     marginLeft: 50,
     backgroundPosition: 0,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    padding: "2rem"
+    padding: "1.5rem",
+    marginBottom: "1rem",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 0,
+      padding: "1rem"
+    }
   },
   title: {
     fontSize: "1.5rem",
     textAlign: "center",
-    margin: "2rem 0"
+    margin: "1rem 0"
   },
   expWrapper: {
     display: "flex",
@@ -63,8 +70,8 @@ function Home(props) {
   return (
     <div className={classes.root}>
       <Typography variant="button" color="primary" className={classes.title}>Experience</Typography>
-      <div className={classes.expWrapper}>
-        <div className={classes.edu}>
+      <Grid className={classes.expWrapper} spacing={24} container>
+        <Grid className={classes.edu} item xs={12} sm={6}>
           <Typography variant="title">
             Education
           </Typography>
@@ -95,8 +102,8 @@ function Home(props) {
               <Typography variant="subtitle2">Navodaya Vidyalaya, Ratnagiri.</Typography>
             </div>
           </div>
-        </div>
-        <div className={classes.edu}>
+        </Grid>
+        <Grid className={classes.edu} item xs={12} sm={6}>
           <Typography variant="title">
             Work
           </Typography>
@@ -127,11 +134,11 @@ function Home(props) {
               <Typography variant="subtitle2">Zeuslearning Pvt. Ltd.</Typography>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={classes.btnWrapper}>
-        <CVButton />
-      </div>
+        </Grid>
+        <Grid className={classes.btnWrapper} item xs={12}>
+          <CVButton />
+        </Grid>
+      </Grid>
     </div>
   );
 }
