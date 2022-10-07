@@ -1,0 +1,22 @@
+name: Build Public Code
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      
+jobs:
+  build:
+    name: Build Code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - run: yarn
+      - run: yarn build
+  
+  
