@@ -7,11 +7,12 @@ interface AnimationProps {
 
 export const Animation: React.FC<AnimationProps> = ({ animationData }) => {
   const animationContainer = useRef(null);
-  let animationController: AnimationItem;
+  let animationController = useRef<AnimationItem | undefined>();
 
   useEffect(() => {
+    console.log(animationContainer.current);
     if (animationContainer.current) {
-      animationController = lottie.loadAnimation({
+      animationController.current = lottie.loadAnimation({
         animationData,
         container: animationContainer.current,
         renderer: "svg",
@@ -21,27 +22,31 @@ export const Animation: React.FC<AnimationProps> = ({ animationData }) => {
     }
 
     return () => {
-      animationController.destroy();
+      if (animationController.current) {
+        animationController.current.destroy();
+      }
     };
-  }, []);
+  }, [animationContainer]);
+
+  console.log(animationController);
 
   return (
     <div
       className="rounded-lg shadow-xl cursor-pointer active:shadow-lg flex"
-      // onMouseEnter={() => {
-      //   if (animationController) {
-      //     animationController.stop();
-      //     animationController.play();
-      //   }
-      // }}
-      // onMouseLeave={() => {
-      //   if (animationController) {
-      //     animationController.goToAndStop(
-      //       animationController.totalFrames - 1,
-      //       true
-      //     );
-      //   }
-      // }}
+      onMouseEnter={() => {
+        if (animationController.current) {
+          animationController.current.stop();
+          animationController.current.play();
+        }
+      }}
+      onMouseLeave={() => {
+        if (animationController.current) {
+          animationController.current.goToAndStop(
+            animationController.current.totalFrames - 1,
+            true
+          );
+        }
+      }}
     >
       <div ref={animationContainer} className="w-32 flex h-32"></div>
     </div>

@@ -15,7 +15,7 @@ export const AnimationModal = () => {
             layoutId={currentLayout}
             className="h-[400px] w-[650px] bg-white rounded-lg shadow-lg opacity-95"
           >
-            prathamesh
+            work in progress
           </motion.div>
         </div>
       )}

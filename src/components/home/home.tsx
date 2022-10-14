@@ -74,6 +74,14 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <div className="fixed top-10 left-10">
+          <a
+            className="text-center px-4 py-2 cursor-pointer bg-blue-900 text-white rounded-lg shadow-lg hover:shadow-2xl"
+            href="mailTo:prathamesh.netake@gmail.com"
+          >
+            Hire Me
+          </a>
+        </div>
       </Section>
     </HomeContext.Provider>
   );
