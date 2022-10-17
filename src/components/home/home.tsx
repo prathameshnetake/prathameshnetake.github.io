@@ -9,7 +9,7 @@ import { MotionCard } from "./motionCard";
 import { AnimatePresence, motion } from "framer-motion";
 import { AnimationModal } from "./animationModal";
 
-enum LAYOUT {
+export enum LAYOUT {
   PROGRAMMING = "programming",
   EXPERIENCE = "experience",
   CERTIFICATE = "certificate",
@@ -76,10 +76,25 @@ export const Home = () => {
         </div>
         <div className="fixed top-10 left-10">
           <a
-            className="text-center px-4 py-2 cursor-pointer bg-blue-900 text-white rounded-lg shadow-lg hover:shadow-2xl"
-            href="mailTo:prathamesh.netake@gmail.com"
+            className="flex text-center px-4 py-2 cursor-pointer bg-blue-900 text-white rounded-lg shadow-lg hover:shadow-2xl"
+            href="mailto:prathamesh.netake@gmail.com?subject=Hello%2C%20Prathamesh&body=I%20am%20writing%20to%20say%20hello%2C%20"
           >
-            Hire Me
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 text-blue-50 mr-2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+              />
+            </svg>
+
+            <p>Hire Me</p>
           </a>
         </div>
       </Section>

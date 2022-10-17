@@ -1,0 +1,3803 @@
+{
+  "id": "VjEtUHJvZmlsZS0xMTE5OTkx",
+  "about": "Prathamesh is a full-stack software developer with over seven years of experience in various web domains, tech stacks, AI, and product development. He specializes in Node.js, React, and Python. Prathamesh aims to use the acquired skills in the software industry to effectively contribute to a company's business objectives and deliver innovative solutions.",
+  "city": "Mumbai",
+  "roleType": "developer",
+  "updatedByTalentAt": "2022-10-15T15:19:33+05:30",
+  "fullName": "Prathamesh Netake",
+  "photo": {
+    "default": "https://uploads.toptal.io/profile_photo/image/user/2340299/default_27afa5904879cd6020d293838f8880d9.jpg",
+    "original": "https://uploads.toptal.io/profile_photo/image/user/2340299/27afa5904879cd6020d293838f8880d9.jpg",
+    "__typename": "ProfilePhotoType"
+  },
+  "languages": {
+    "nodes": [
+      {
+        "id": "VjEtTGFuZ3VhZ2UtMTIwMTE3",
+        "name": "Marathi",
+        "__typename": "Language"
+      },
+      {
+        "id": "VjEtTGFuZ3VhZ2UtNg",
+        "name": "Hindi",
+        "__typename": "Language"
+      },
+      {
+        "id": "VjEtTGFuZ3VhZ2UtMQ",
+        "name": "English",
+        "__typename": "Language"
+      }
+    ],
+    "__typename": "LanguageConnection"
+  },
+  "citizenship": {
+    "id": "VjEtQ291bnRyeS0xMDI",
+    "name": "India",
+    "__typename": "Country"
+  },
+  "employments": {
+    "nodes": [
+      {
+        "id": "VjEtRW1wbG95bWVudC0yMjY2MTg",
+        "company": "Kognitiv",
+        "noWebsite": false,
+        "companyWebsite": "www.kognitivinc.com",
+        "position": "Senior Full-stack Developer",
+        "startDate": 2021,
+        "endDate": 2022,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5ODE",
+              "name": "TypeScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTQ",
+              "name": "Docker",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNTI",
+              "name": "Google Cloud",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNzkwNDU",
+              "name": "React",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzkyMDQ",
+              "name": "Google Cloud Functions",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDM",
+              "name": "Bootstrap",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNzE",
+              "name": "Axios",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzk0OTg",
+              "name": "Webpack 4",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTU",
+              "name": "Front-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTQ",
+              "name": "JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjA",
+              "name": "HTML",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTg",
+              "name": "CSS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mzk",
+              "name": "CSS3",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcyNjU",
+              "name": "Jest",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTA",
+              "name": "ECMAScript (ES6)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjY",
+              "name": "Express.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1NjY",
+              "name": "Moment.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxOTg",
+              "name": "Single-page Applications (SPA)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTM",
+              "name": "APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMTg",
+              "name": "Back-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njk",
+              "name": "Agile",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNjk2ODM",
+              "name": "Jira",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTQ0Nzgw",
+              "name": "Vite",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzczNzY",
+              "name": "MacOS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDI",
+              "name": "Web",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNDAwNDc",
+              "name": "Cypress.io",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTY",
+              "name": "Architecture",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgzMjM",
+              "name": "Technical Leadership",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwMTE",
+              "name": "Full-stack",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njc",
+              "name": "Redux",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTQ",
+              "name": "Design Patterns",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDQ",
+              "name": "REST",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNTE",
+              "name": "Google Cloud Platform (GCP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwOTE",
+              "name": "REST APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMjMwNjE5",
+              "name": "Redux RTK",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Nzk",
+              "name": "Unit Testing",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTk",
+              "name": "Scrum",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjI",
+              "name": "Functional Programming",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtOTgzMzE",
+              "name": "API Integration",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc5NTI",
+              "name": "Serverless Architecture",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1Mzc",
+              "name": "Twilio",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTY",
+              "name": "MySQL",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "reportingTo": [],
+        "primaryGeography": null,
+        "experienceItems": [
+          "Designed and developed an extension app for Workday to schedule interviews in a smart way.",
+          "Developed features, fixed issues, and enhanced the performance of the in-house product, Rooster. Converted several build systems to support TypeScript and migrated code accordingly.",
+          "Collaborated with the marketing and CRM teams to transition over 30 clients from Workday's default interview scheduling tool to Rooster for all interview scheduling.",
+          "Led a team of three junior developers, along with individual contributions."
+        ],
+        "highlight": false,
+        "publicationPermit": true,
+        "managementExperience": {
+          "isLeadPosition": true,
+          "reportsRange": "RANGE_1_5",
+          "__typename": "ManagementExperience"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktODI0",
+              "name": "Blockchain",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg5",
+              "name": "Content & Collaboration Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg2",
+              "name": "Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNjUz",
+              "name": "Custom Software & IT Services",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNjM3",
+              "name": "Business Services",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "employer": {
+          "id": "VjEtRW1wbG95ZXItMTMxOTE5",
+          "name": "Kognitiv",
+          "city": "Newton Center",
+          "country": "United States",
+          "logoUrl": null,
+          "website": "www.kognitivinc.com",
+          "revenue": 21361,
+          "employeeCount": 74,
+          "lastSyncedAt": "2022-09-10T21:14:30+05:30",
+          "industries": {
+            "nodes": [
+              {
+                "id": "VjEtSW5kdXN0cnktNjM3",
+                "name": "Business Services",
+                "__typename": "Industry"
+              },
+              {
+                "id": "VjEtSW5kdXN0cnktNjUz",
+                "name": "Custom Software & IT Services",
+                "__typename": "Industry"
+              }
+            ],
+            "__typename": "IndustryConnection"
+          },
+          "otherUrls": {
+            "nodes": [],
+            "__typename": "OtherEmployerUrlConnection"
+          },
+          "otherNames": {
+            "nodes": [],
+            "__typename": "OtherEmployerNameConnection"
+          },
+          "__typename": "Employer"
+        },
+        "isEnterpriseExperience": false,
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "Employment"
+      },
+      {
+        "id": "VjEtRW1wbG95bWVudC0yMjY2MTk",
+        "company": "eJam",
+        "noWebsite": false,
+        "companyWebsite": "www.ejam.com",
+        "position": "Senior Full-stack Developer",
+        "startDate": 2020,
+        "endDate": 2021,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5ODE",
+              "name": "TypeScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTQ",
+              "name": "JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTI4NTAy",
+              "name": "Styled-components",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzkzNDI",
+              "name": "Odoo",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNDkyOTM",
+              "name": "Konnektive CRM",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjI",
+              "name": "Python",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTU",
+              "name": "Front-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNzkwNDU",
+              "name": "React",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjA",
+              "name": "HTML",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTg",
+              "name": "CSS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mzk",
+              "name": "CSS3",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzk0OTg",
+              "name": "Webpack 4",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MzQ",
+              "name": "MongoDB",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwMDk",
+              "name": "D3.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNzE",
+              "name": "Axios",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcyNjU",
+              "name": "Jest",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTA",
+              "name": "ECMAScript (ES6)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjY",
+              "name": "Express.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1NjY",
+              "name": "Moment.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMDc",
+              "name": "eCommerce",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxOTg",
+              "name": "Single-page Applications (SPA)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTM",
+              "name": "APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMTg",
+              "name": "Back-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjk",
+              "name": "PostgreSQL",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtODEwMzY",
+              "name": "SQL",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njk",
+              "name": "Agile",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNjk2ODM",
+              "name": "Jira",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTQ0Nzgw",
+              "name": "Vite",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTA",
+              "name": "Windows",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDI",
+              "name": "Web",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNDAwNDc",
+              "name": "Cypress.io",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDA",
+              "name": "Amazon Web Services (AWS)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwMTE",
+              "name": "Full-stack",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njc",
+              "name": "Redux",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTExNzEy",
+              "name": "AWS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNDY1NDM",
+              "name": "Tailwind CSS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMjc",
+              "name": "Django REST Framework",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NzM",
+              "name": "Heroku",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTc",
+              "name": "PHP",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTQ",
+              "name": "Design Patterns",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDQ",
+              "name": "REST",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTI",
+              "name": "Test-driven Development (TDD)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwOTE",
+              "name": "REST APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMjMwNjE5",
+              "name": "Redux RTK",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Nzk",
+              "name": "Unit Testing",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTk",
+              "name": "Scrum",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtOTgzMzE",
+              "name": "API Integration",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc5NTI",
+              "name": "Serverless Architecture",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1Mzc",
+              "name": "Twilio",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTI",
+              "name": "GraphQL",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNjU",
+              "name": "Zapier",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTY",
+              "name": "MySQL",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "reportingTo": [],
+        "primaryGeography": null,
+        "experienceItems": [
+          "Led a team of three to add features and improve the performance and scalability of the existing CMS dashboard. The dashboard was used to automatically generate checkout pages using Bitbucket pipelines.",
+          "Directed system testing and validation procedures and collaborated with customers and departments to solve technical issues, including software system design and maintenance.",
+          "Developed software systems using mathematical models to predict optimized pricing models.",
+          "Delivered the project to enable the generated checkout URLs from the dashboard to have massive traffic from various marketing channels. That was the company's primary monetization method."
+        ],
+        "highlight": false,
+        "publicationPermit": true,
+        "managementExperience": {
+          "isLeadPosition": true,
+          "reportsRange": "RANGE_1_5",
+          "__typename": "ManagementExperience"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktODkw",
+              "name": "Event Ticketing",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg4",
+              "name": "Business Intelligence (BI) Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzkw",
+              "name": "Customer Relationship Management (CRM) Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg5",
+              "name": "Content & Collaboration Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODE3",
+              "name": "Fintech",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODc5",
+              "name": "Marketing Technology (Martech)",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg2",
+              "name": "Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNjM3",
+              "name": "Business Services",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNjQ5",
+              "name": "Advertising & Marketing",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODE0",
+              "name": "eCommerce",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "employer": {
+          "id": "VjEtRW1wbG95ZXItMTMxOTIw",
+          "name": "eJam",
+          "city": "Newport Beach",
+          "country": "United States",
+          "logoUrl": null,
+          "website": "www.ejam.com",
+          "revenue": 4490,
+          "employeeCount": 18,
+          "lastSyncedAt": "2022-09-10T21:24:05+05:30",
+          "industries": {
+            "nodes": [
+              {
+                "id": "VjEtSW5kdXN0cnktNjM3",
+                "name": "Business Services",
+                "__typename": "Industry"
+              },
+              {
+                "id": "VjEtSW5kdXN0cnktNjQ5",
+                "name": "Advertising & Marketing",
+                "__typename": "Industry"
+              }
+            ],
+            "__typename": "IndustryConnection"
+          },
+          "otherUrls": {
+            "nodes": [],
+            "__typename": "OtherEmployerUrlConnection"
+          },
+          "otherNames": {
+            "nodes": [],
+            "__typename": "OtherEmployerNameConnection"
+          },
+          "__typename": "Employer"
+        },
+        "isEnterpriseExperience": false,
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "Employment"
+      },
+      {
+        "id": "VjEtRW1wbG95bWVudC0yMjY2MjA",
+        "company": "Accio",
+        "noWebsite": false,
+        "companyWebsite": "www.accio.ai",
+        "position": "Machine Learning Engineer",
+        "startDate": 2019,
+        "endDate": 2020,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5MjI",
+              "name": "Python",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNDE",
+              "name": "PyTorch",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDc",
+              "name": "TensorFlow",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTU",
+              "name": "Front-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTQ",
+              "name": "JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjA",
+              "name": "HTML",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTg",
+              "name": "CSS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNTA3NTI",
+              "name": "Server-side JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mzk",
+              "name": "CSS3",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNDI",
+              "name": "Python 3",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc0NDE",
+              "name": "Python 2",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzk0OTg",
+              "name": "Webpack 4",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MzE",
+              "name": "Angular",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTI2MDc5",
+              "name": "MUI (Material UI)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNzE",
+              "name": "Axios",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTA",
+              "name": "ECMAScript (ES6)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjY",
+              "name": "Express.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1NjY",
+              "name": "Moment.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxOTg",
+              "name": "Single-page Applications (SPA)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTM",
+              "name": "APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMTg",
+              "name": "Back-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDU",
+              "name": "Django",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDQ",
+              "name": "Apache Kafka",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njk",
+              "name": "Agile",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNjk2ODM",
+              "name": "Jira",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTA",
+              "name": "Windows",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDI",
+              "name": "Web",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDA",
+              "name": "Amazon Web Services (AWS)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgzMjM",
+              "name": "Technical Leadership",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwMTE",
+              "name": "Full-stack",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njc",
+              "name": "Redux",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTExNzEy",
+              "name": "AWS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDg",
+              "name": "GitHub",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc0MDg",
+              "name": "RxJS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTQ",
+              "name": "Design Patterns",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDQ",
+              "name": "REST",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwOTE",
+              "name": "REST APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMjMwNjE5",
+              "name": "Redux RTK",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Nzk",
+              "name": "Unit Testing",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjM",
+              "name": "React Native",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTk",
+              "name": "Scrum",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtOTgzMzE",
+              "name": "API Integration",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTY",
+              "name": "MySQL",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "reportingTo": [],
+        "primaryGeography": null,
+        "experienceItems": [
+          "Designed machine learning systems and applied algorithms to generate accurate predictions and resolve object detection problems.",
+          "Developed models to achieve business objectives and metrics to track progress. Managed available resources, such as hardware, data, and personnel, to ensure deadlines were met.",
+          "Delivered a complete POC that could identify celebrities on any webpage and show ads accordingly."
+        ],
+        "highlight": false,
+        "publicationPermit": true,
+        "managementExperience": {
+          "isLeadPosition": false,
+          "reportsRange": null,
+          "__typename": "ManagementExperience"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktNzg5",
+              "name": "Content & Collaboration Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODc5",
+              "name": "Marketing Technology (Martech)",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg2",
+              "name": "Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODIy",
+              "name": "Artificial Intelligence (AI)",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNjQ5",
+              "name": "Advertising & Marketing",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "employer": {
+          "id": "VjEtRW1wbG95ZXItMTMxOTIx",
+          "name": "Accio",
+          "city": "New York",
+          "country": "United States",
+          "logoUrl": null,
+          "website": "www.accio.ai",
+          "revenue": 3711,
+          "employeeCount": 13,
+          "lastSyncedAt": "2022-09-10T21:32:59+05:30",
+          "industries": {
+            "nodes": [
+              {
+                "id": "VjEtSW5kdXN0cnktNjM3",
+                "name": "Business Services",
+                "__typename": "Industry"
+              },
+              {
+                "id": "VjEtSW5kdXN0cnktNjUz",
+                "name": "Custom Software & IT Services",
+                "__typename": "Industry"
+              }
+            ],
+            "__typename": "IndustryConnection"
+          },
+          "otherUrls": {
+            "nodes": [],
+            "__typename": "OtherEmployerUrlConnection"
+          },
+          "otherNames": {
+            "nodes": [],
+            "__typename": "OtherEmployerNameConnection"
+          },
+          "__typename": "Employer"
+        },
+        "isEnterpriseExperience": false,
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "Employment"
+      },
+      {
+        "id": "VjEtRW1wbG95bWVudC0yMjY2NjA",
+        "company": "AitoeLabs",
+        "noWebsite": true,
+        "companyWebsite": null,
+        "position": "Full-stack Software Engineer",
+        "startDate": 2018,
+        "endDate": 2020,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5MTQ",
+              "name": "JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNzkwNDU",
+              "name": "React",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDE",
+              "name": "C++",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDc",
+              "name": "TensorFlow",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMzk",
+              "name": "OpenCV",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTU",
+              "name": "Front-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5ODE",
+              "name": "TypeScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjA",
+              "name": "HTML",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTg",
+              "name": "CSS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgwMDQ",
+              "name": "Next.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNTA3NTI",
+              "name": "Server-side JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mzk",
+              "name": "CSS3",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNDI",
+              "name": "Python 3",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc0NDE",
+              "name": "Python 2",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzk0OTg",
+              "name": "Webpack 4",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MzQ",
+              "name": "MongoDB",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTI2MDc5",
+              "name": "MUI (Material UI)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNzE",
+              "name": "Axios",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTA",
+              "name": "ECMAScript (ES6)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjY",
+              "name": "Express.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1NjY",
+              "name": "Moment.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxOTg",
+              "name": "Single-page Applications (SPA)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTM",
+              "name": "APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMTg",
+              "name": "Back-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTQ",
+              "name": "Vue",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njk",
+              "name": "Agile",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNjk2ODM",
+              "name": "Jira",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTA",
+              "name": "Windows",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDI",
+              "name": "Web",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMDE",
+              "name": "Trello",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwMTE",
+              "name": "Full-stack",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njc",
+              "name": "Redux",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMjgxOQ",
+              "name": "Vercel",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDg",
+              "name": "GitHub",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc0MDg",
+              "name": "RxJS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDQ",
+              "name": "REST",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5ODM",
+              "name": "Azure",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwOTE",
+              "name": "REST APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMjMwNjE5",
+              "name": "Redux RTK",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Nzk",
+              "name": "Unit Testing",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTk",
+              "name": "Scrum",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjI",
+              "name": "Functional Programming",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtOTgzMzE",
+              "name": "API Integration",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1Mzc",
+              "name": "Twilio",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc2OTA",
+              "name": "Internet of Things (IoT)",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "reportingTo": [],
+        "primaryGeography": null,
+        "experienceItems": [
+          "Designed and developed a web-based application that can connect to any CCTV infrastructure and add automated security rules using artificial intelligence.",
+          "Prepared UI for end-to-end analytics pipeline that was an admin's dashboard.",
+          "Scaled an initial POC product to get government projects, such as automatic real-time school attendance monitoring."
+        ],
+        "highlight": false,
+        "publicationPermit": true,
+        "managementExperience": {
+          "isLeadPosition": false,
+          "reportsRange": null,
+          "__typename": "ManagementExperience"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg2",
+              "name": "Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODIy",
+              "name": "Artificial Intelligence (AI)",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNjUy",
+              "name": "Security Products & Services",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "employer": null,
+        "isEnterpriseExperience": false,
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "Employment"
+      },
+      {
+        "id": "VjEtRW1wbG95bWVudC0yMjcwMzU",
+        "company": "Zeus Systems Pvt",
+        "noWebsite": false,
+        "companyWebsite": "www.zeuslearning.com",
+        "position": "Software Engineer",
+        "startDate": 2016,
+        "endDate": 2018,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5OTE",
+              "name": "Backbone.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjA",
+              "name": "HTML",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mzk",
+              "name": "CSS3",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTk",
+              "name": "jQuery",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDk",
+              "name": ".NET",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTc",
+              "name": "Gulp",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTI1Njk0",
+              "name": "Cordova",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MzE",
+              "name": "Angular",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTU",
+              "name": "Front-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTQ",
+              "name": "JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTg",
+              "name": "CSS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzk0OTg",
+              "name": "Webpack 4",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNzE",
+              "name": "Axios",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTA",
+              "name": "ECMAScript (ES6)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1NjY",
+              "name": "Moment.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxOTg",
+              "name": "Single-page Applications (SPA)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTM",
+              "name": "APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNjc",
+              "name": "RabbitMQ",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwMjc",
+              "name": "Grunt",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Njk",
+              "name": "Agile",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTA",
+              "name": "Windows",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDI",
+              "name": "Web",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwOTE",
+              "name": "REST APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Nzk",
+              "name": "Unit Testing",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTk",
+              "name": "Scrum",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjI",
+              "name": "Functional Programming",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtOTgzMzE",
+              "name": "API Integration",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MTY",
+              "name": "MySQL",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "reportingTo": [],
+        "primaryGeography": null,
+        "experienceItems": [
+          "Contributed to various projects for top e-learning giants in the domain.",
+          "Developed products and features as per client requirements.",
+          "Improved in-house products to have high demand from top clients worldwide."
+        ],
+        "highlight": false,
+        "publicationPermit": true,
+        "managementExperience": {
+          "isLeadPosition": false,
+          "reportsRange": null,
+          "__typename": "ManagementExperience"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg2",
+              "name": "Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNjcw",
+              "name": "Education",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "employer": {
+          "id": "VjEtRW1wbG95ZXItMTE2NzM2",
+          "name": "Zeus Systems Pvt",
+          "city": "London",
+          "country": "United Kingdom",
+          "logoUrl": null,
+          "website": "www.zeuslearning.com",
+          "revenue": 65300,
+          "employeeCount": 15,
+          "lastSyncedAt": "2022-09-14T21:13:41+05:30",
+          "industries": {
+            "nodes": [
+              {
+                "id": "VjEtSW5kdXN0cnktNjcw",
+                "name": "Education",
+                "__typename": "Industry"
+              }
+            ],
+            "__typename": "IndustryConnection"
+          },
+          "otherUrls": {
+            "nodes": [],
+            "__typename": "OtherEmployerUrlConnection"
+          },
+          "otherNames": {
+            "nodes": [
+              {
+                "name": "Zeus Learning",
+                "talentsCount": 2,
+                "__typename": "OtherEmployerName"
+              }
+            ],
+            "__typename": "OtherEmployerNameConnection"
+          },
+          "__typename": "Employer"
+        },
+        "isEnterpriseExperience": false,
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "Employment"
+      }
+    ],
+    "__typename": "EmploymentConnection"
+  },
+  "educations": {
+    "nodes": [
+      {
+        "degree": "Bachelor's Degree",
+        "fieldOfStudy": "Computer Science",
+        "highlight": false,
+        "id": "VjEtRWR1Y2F0aW9uLTE1MTQ2Mw",
+        "location": "Mumbai, India",
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5Njk",
+              "name": "Agile",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDI",
+              "name": "Web",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDg",
+              "name": "GitHub",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNDY3NzA",
+              "name": "WASM",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc2OTA",
+              "name": "Internet of Things (IoT)",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "title": "University of Mumbai",
+        "yearFrom": 2012,
+        "yearTo": 2016,
+        "__typename": "Education"
+      }
+    ],
+    "__typename": "EducationConnection"
+  },
+  "certifications": {
+    "nodes": [
+      {
+        "certificate": "Business Management Program",
+        "highlight": false,
+        "id": "VjEtQ2VydGlmaWNhdGlvbi0yNzg2Nw",
+        "institution": "ThePower Business School",
+        "validFromMonth": 8,
+        "validFromYear": 2020,
+        "validToMonth": null,
+        "validToYear": null,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzg1MTI",
+              "name": "Management",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "__typename": "Certification"
+      },
+      {
+        "certificate": "Advanced Node.js",
+        "highlight": false,
+        "id": "VjEtQ2VydGlmaWNhdGlvbi0yNzg2OA",
+        "institution": "LinkedIn",
+        "validFromMonth": 0,
+        "validFromYear": 2019,
+        "validToMonth": null,
+        "validToYear": null,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMjM4NTM",
+              "name": "Deno",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDI",
+              "name": "Web",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "__typename": "Certification"
+      },
+      {
+        "certificate": "Introduction to Computer Science and Programming",
+        "highlight": false,
+        "id": "VjEtQ2VydGlmaWNhdGlvbi0yNzg2Ng",
+        "institution": "edX",
+        "validFromMonth": 0,
+        "validFromYear": 2014,
+        "validToMonth": null,
+        "validToYear": null,
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5MjI",
+              "name": "Python",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc0NDE",
+              "name": "Python 2",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMjc",
+              "name": "Django REST Framework",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "__typename": "Certification"
+      }
+    ],
+    "__typename": "CertificationConnection"
+  },
+  "portfolioItems": {
+    "nodes": [
+      {
+        "id": "VjEtUG9ydGZvbGlvSXRlbS0yMjU5MjI",
+        "link": "https://rooster.us",
+        "title": "Rooster",
+        "highlight": false,
+        "coverImage": null,
+        "description": "Rooster is an extension application for workday HCM (also works with several other HCMs in the market) to extend its ability to schedule interviews intelligently. Rooster has unique features such as auto-book, notifications, and automation. I proposed and implemented an automation feature that adds support for sending automated actions like sending calendar invitations, cancellations, and rescheduling.",
+        "accomplishment": null,
+        "publicationPermit": true,
+        "files": {
+          "nodes": [],
+          "__typename": "PortfolioItemFileConnection"
+        },
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5MTQ",
+              "name": "JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5OTA",
+              "name": "ECMAScript (ES6)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTQ",
+              "name": "Docker",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5ODg",
+              "name": "Firebase",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzk1NDg",
+              "name": "Firebase Hosting",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzkyMDQ",
+              "name": "Google Cloud Functions",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNzkwNDU",
+              "name": "React",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwMTA",
+              "name": "Webpack",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxOTg",
+              "name": "Single-page Applications (SPA)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTM",
+              "name": "APIs",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMTg",
+              "name": "Back-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTQ",
+              "name": "Design Patterns",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzg2",
+              "name": "Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktOTE0",
+              "name": "Small & Medium-sized Enterprises (SME)",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "PortfolioItem"
+      },
+      {
+        "id": "VjEtUG9ydGZvbGlvSXRlbS0yMjY5NDg",
+        "link": null,
+        "title": "ai-Sentinel",
+        "highlight": false,
+        "coverImage": null,
+        "description": "AI-Sentinel is a web dashboard for AI-based smart surveillance security written with React and Node.js. It monitors the machine learning process developed in-house in C++ and shows results accordingly. You can configure cameras, connect existing DVRs, and configure various security rules.\nMy role was to design and develop front-end and backend flow, mentoring Jr. developers and splitting tasks among them. \n\nOn the machine learning front, I worked on a few machine learning algorithms such as object detection, segmentation, etc.",
+        "accomplishment": null,
+        "publicationPermit": true,
+        "files": {
+          "nodes": [],
+          "__typename": "PortfolioItemFileConnection"
+        },
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5NDE",
+              "name": "C++",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNzkwNDU",
+              "name": "React",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNzE",
+              "name": "Axios",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxNDc",
+              "name": "TensorFlow",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzgxNDE",
+              "name": "PyTorch",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc1NjY",
+              "name": "Moment.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMDE",
+              "name": "Trello",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMzk",
+              "name": "OpenCV",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTQ",
+              "name": "Design Patterns",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktOTE0",
+              "name": "Small & Medium-sized Enterprises (SME)",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODAw",
+              "name": "Security Software",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "PortfolioItem"
+      },
+      {
+        "id": "VjEtUG9ydGZvbGlvSXRlbS0yMjQ1MDg",
+        "link": "https://github.com/prathameshnetake/lumos",
+        "title": "Face Search App Lumos",
+        "highlight": false,
+        "coverImage": null,
+        "description": "Lumos is a cross-platform desktop application developed as a hobby project. It is built with Electron and React. Lumos allows users to search for faces in local photos by querying one or more faces to retrieve all images that contain the queried faces. ",
+        "accomplishment": null,
+        "publicationPermit": true,
+        "files": {
+          "nodes": [],
+          "__typename": "PortfolioItemFileConnection"
+        },
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzg0MTU",
+              "name": "Electron",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtNDY1NDM",
+              "name": "Tailwind CSS",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMTQ0Nzgw",
+              "name": "Vite",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5ODE",
+              "name": "TypeScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzg1OTE",
+              "name": "C++14",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcxMTg",
+              "name": "Back-end",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NjA",
+              "name": "C",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzg4MDY",
+              "name": "Embedded Software",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDg",
+              "name": "GitHub",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjQ",
+              "name": "HTML5",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzcwNTQ",
+              "name": "Design Patterns",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktNzg2",
+              "name": "Software",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktODQ3",
+              "name": "Consumer Products",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "PortfolioItem"
+      },
+      {
+        "id": "VjEtUG9ydGZvbGlvSXRlbS0yMjU5MjQ",
+        "link": "https://www.npmjs.com/package/annoy-node",
+        "title": "Annoy-Node",
+        "highlight": false,
+        "coverImage": null,
+        "description": "Annoy-Node is a TypeScript typed binding for Annoy index (https://github.com/spotify/annoy). \n\nThe Annoy library has out-of-the-box support for Python but not for JavaScript. The only existing binding library (https://www.npmjs.com/package/annoy) has no support for TypeScript and also lacks updated features; this made us write newer and better support for JavaScript and TypeScript using N-API.",
+        "accomplishment": null,
+        "publicationPermit": true,
+        "files": {
+          "nodes": [],
+          "__typename": "PortfolioItemFileConnection"
+        },
+        "skills": {
+          "nodes": [
+            {
+              "id": "VjEtU2tpbGwtMzY5MTQ",
+              "name": "JavaScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5ODE",
+              "name": "TypeScript",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDE",
+              "name": "C++",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5MjM",
+              "name": "Node.js",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzc3MjE",
+              "name": "CMake",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzg1OTE",
+              "name": "C++14",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5Mjc",
+              "name": "Git",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTU",
+              "name": "Object-oriented Programming (OOP)",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NDg",
+              "name": "GitHub",
+              "__typename": "Skill"
+            },
+            {
+              "id": "VjEtU2tpbGwtMzY5NTY",
+              "name": "JSON",
+              "__typename": "Skill"
+            }
+          ],
+          "__typename": "SkillConnection"
+        },
+        "industries": {
+          "nodes": [
+            {
+              "id": "VjEtSW5kdXN0cnktODI2",
+              "name": "Web Development",
+              "__typename": "Industry"
+            },
+            {
+              "id": "VjEtSW5kdXN0cnktNzAz",
+              "name": "Libraries",
+              "__typename": "Industry"
+            }
+          ],
+          "__typename": "IndustryConnection"
+        },
+        "engagement": null,
+        "toptalRelated": false,
+        "__typename": "PortfolioItem"
+      }
+    ],
+    "__typename": "PortfolioItemConnection"
+  },
+  "engagements": {
+    "nodes": [],
+    "__typename": "TalentEngagementConnection"
+  },
+  "timeZone": {
+    "name": "(UTC+05:30) Asia - Calcutta",
+    "value": "Asia/Calcutta",
+    "utcOffset": 19800,
+    "stdOffset": 0,
+    "__typename": "TimeZone"
+  },
+  "workingTimeFrom": "11:00:00",
+  "workingTimeTo": "23:00:00",
+  "availableShiftRangeFrom": "11:00:00",
+  "availableShiftRangeTo": "00:00:00",
+  "phoneNumber": "+919082199961",
+  "skype": "prathamesh.netake",
+  "quote": "thing I've designed and developed is the Workday extension app, Rooster, to stretch Workday's ability to schedule interviews very smartly.",
+  "twitter": null,
+  "linkedin": "https://www.linkedin.com/in/prathamesh-netake-64264123/",
+  "github": "https://github.com/prathameshnetake",
+  "website": "https://prathameshnetake.github.io/",
+  "dribbble": null,
+  "behance": null,
+  "softwareSkills": {
+    "nodes": [
+      {
+        "id": "VjEtU2tpbGwtMzczNzY",
+        "name": "MacOS",
+        "__typename": "Skill"
+      },
+      {
+        "id": "VjEtU2tpbGwtMzY5NTA",
+        "name": "Windows",
+        "__typename": "Skill"
+      }
+    ],
+    "__typename": "SkillConnection"
+  },
+  "skillSets": {
+    "nodes": [
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3NjU",
+        "public": true,
+        "rating": "EXPERT",
+        "position": 0,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5ODE",
+          "name": "TypeScript",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3NjY",
+        "public": true,
+        "rating": "EXPERT",
+        "position": 1,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MTQ",
+          "name": "JavaScript",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3Njc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 2,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5OTA",
+          "name": "ECMAScript (ES6)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3Njg",
+        "public": true,
+        "rating": "EXPERT",
+        "position": 3,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MjM",
+          "name": "Node.js",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3NzI",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 4,
+        "skill": {
+          "id": "VjEtU2tpbGwtNTA3NTI",
+          "name": "Server-side JavaScript",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3NzM",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 5,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5Mzk",
+          "name": "CSS3",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3NzQ",
+        "public": true,
+        "rating": "EXPERT",
+        "position": 6,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwNDI",
+          "name": "Python 3",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3NzU",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 7,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc0NDE",
+          "name": "Python 2",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3OTc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 8,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzk0OTg",
+          "name": "Webpack 4",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3OTg",
+        "public": true,
+        "rating": "STRONG",
+        "position": 9,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzg1OTE",
+          "name": "C++14",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ3OTk",
+        "public": false,
+        "rating": "STRONG",
+        "position": 10,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NjA",
+          "name": "C",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4MDA",
+        "public": true,
+        "rating": "EXPERT",
+        "position": 11,
+        "skill": {
+          "id": "VjEtU2tpbGwtNzkwNDU",
+          "name": "React",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4MDE",
+        "public": true,
+        "rating": "EXPERT",
+        "position": 12,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MzQ",
+          "name": "MongoDB",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4MjE",
+        "public": true,
+        "rating": "COMPETENT",
+        "position": 13,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5OTQ",
+          "name": "Vue",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4MjU",
+        "public": false,
+        "rating": "STRONG",
+        "position": 14,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MzE",
+          "name": "Angular",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4MjY",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 15,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MjA",
+          "name": "HTML",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4Mjc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 16,
+        "skill": {
+          "id": "VjEtU2tpbGwtMTI2MDc5",
+          "name": "MUI (Material UI)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4Mjg",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 17,
+        "skill": {
+          "id": "VjEtU2tpbGwtMTI4NTAy",
+          "name": "Styled-components",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4Mjk",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 18,
+        "skill": {
+          "id": "VjEtU2tpbGwtNDY1NDM",
+          "name": "Tailwind CSS",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4Njc",
+        "public": false,
+        "rating": "STRONG",
+        "position": 19,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwMDk",
+          "name": "D3.js",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4Njg",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 20,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzgxNzE",
+          "name": "Axios",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4Njk",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 21,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzgwMDQ",
+          "name": "Next.js",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4Nzk",
+        "public": false,
+        "rating": "STRONG",
+        "position": 22,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxNDc",
+          "name": "TensorFlow",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4ODA",
+        "public": false,
+        "rating": "STRONG",
+        "position": 23,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzgxNDE",
+          "name": "PyTorch",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4OTA",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 24,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NjY",
+          "name": "Express.js",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4OTE",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 25,
+        "skill": {
+          "id": "VjEtU2tpbGwtMjM4NTM",
+          "name": "Deno",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 6,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4OTI",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 26,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NDM",
+          "name": "Bootstrap",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4OTQ",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 27,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc1NjY",
+          "name": "Moment.js",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ4OTk",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 28,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwMjc",
+          "name": "Grunt",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MDE",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 29,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5OTc",
+          "name": "Gulp",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MDY",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 30,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzg0MTU",
+          "name": "Electron",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MDg",
+        "public": false,
+        "rating": "STRONG",
+        "position": 31,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxMzk",
+          "name": "OpenCV",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MjM",
+        "public": false,
+        "rating": "STRONG",
+        "position": 32,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcyMTU",
+          "name": "Solidity",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MjQ",
+        "public": false,
+        "rating": "STRONG",
+        "position": 33,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwMzk",
+          "name": "Blockchain",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MjU",
+        "public": false,
+        "rating": "STRONG",
+        "position": 34,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc0Mjg",
+          "name": "Smart Contracts",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MjY",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 35,
+        "skill": {
+          "id": "VjEtU2tpbGwtNDAwMTU",
+          "name": "Ant Design",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5Mjc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 36,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTE",
+          "name": "Redis",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5Mjg",
+        "public": false,
+        "rating": "STRONG",
+        "position": 37,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxNTI",
+          "name": "Google Cloud",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5Mjk",
+        "public": false,
+        "rating": "STRONG",
+        "position": 38,
+        "skill": {
+          "id": "VjEtU2tpbGwtMTExNzEy",
+          "name": "AWS",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MzA",
+        "public": false,
+        "rating": "STRONG",
+        "position": 39,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTQ",
+          "name": "Docker",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MzE",
+        "public": false,
+        "rating": "STRONG",
+        "position": 40,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzkwMTE",
+          "name": "Dart",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MzI",
+        "public": false,
+        "rating": "STRONG",
+        "position": 41,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzk2Nzk",
+          "name": "Flutter",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MzM",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 42,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NjM",
+          "name": "React Native",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MzQ",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 43,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5Njk",
+          "name": "Agile",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDQ5MzU",
+        "public": false,
+        "rating": "STRONG",
+        "position": 44,
+        "skill": {
+          "id": "VjEtU2tpbGwtNjk2ODM",
+          "name": "Jira",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDUwMjU",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 45,
+        "skill": {
+          "id": "VjEtU2tpbGwtMTQ0Nzgw",
+          "name": "Vite",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDUwNjE",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 46,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MjI",
+          "name": "Python",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDUwNjg",
+        "public": false,
+        "rating": "STRONG",
+        "position": 47,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzg1MTI",
+          "name": "Management",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDU5Njk",
+        "public": false,
+        "rating": "STRONG",
+        "position": 48,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzczNzY",
+          "name": "MacOS",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDU5NzA",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 49,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTA",
+          "name": "Windows",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDU5NzE",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 50,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTU",
+          "name": "Object-oriented Programming (OOP)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDU5NzI",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 51,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxNDI",
+          "name": "Web",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDY0NzY",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 52,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzkyMDQ",
+          "name": "Google Cloud Functions",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDY0ODA",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 53,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzkzNDI",
+          "name": "Odoo",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDY0ODE",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 54,
+        "skill": {
+          "id": "VjEtU2tpbGwtNDkyOTM",
+          "name": "Konnektive CRM",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDY0OTE",
+        "public": false,
+        "rating": "STRONG",
+        "position": 55,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxMDE",
+          "name": "Trello",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDY0OTI",
+        "public": false,
+        "rating": "STRONG",
+        "position": 56,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzg4MDY",
+          "name": "Embedded Software",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDY0OTM",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 57,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5OTE",
+          "name": "Backbone.js",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDY0OTQ",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 58,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MTk",
+          "name": "jQuery",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMDcwNDY",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 59,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NDE",
+          "name": "C++",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMTk5OTE",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 60,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NDk",
+          "name": ".NET",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMTk5OTI",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 61,
+        "skill": {
+          "id": "VjEtU2tpbGwtMTI1Njk0",
+          "name": "Cordova",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMzYyMTg",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 62,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5Mjc",
+          "name": "Git",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMzYyMTk",
+        "public": false,
+        "rating": "STRONG",
+        "position": 63,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcyNjU",
+          "name": "Jest",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMzYyMjI",
+        "public": false,
+        "rating": "STRONG",
+        "position": 64,
+        "skill": {
+          "id": "VjEtU2tpbGwtNDAwNDc",
+          "name": "Cypress.io",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxMzYyMjM",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 65,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MTg",
+          "name": "CSS",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNDU2NTM",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 66,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5OTU",
+          "name": "Front-end",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNTgxMzk",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 67,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5ODg",
+          "name": "Firebase",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNTgxNDA",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 68,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzk1NDg",
+          "name": "Firebase Hosting",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNTgxNDE",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 69,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwMTA",
+          "name": "Webpack",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": null,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNTgxNTc",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 70,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc3MjE",
+          "name": "CMake",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjExNzg",
+        "public": false,
+        "rating": "STRONG",
+        "position": 71,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxMDc",
+          "name": "eCommerce",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjUwOTc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 72,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxOTg",
+          "name": "Single-page Applications (SPA)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjUwOTg",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 73,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTM",
+          "name": "APIs",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjUwOTk",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 74,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxMTg",
+          "name": "Back-end",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjUxMDA",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 75,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5Mjk",
+          "name": "PostgreSQL",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjY2MDA",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 76,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NDU",
+          "name": "Django",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjY2MDE",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 77,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxNDQ",
+          "name": "Apache Kafka",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNjY2MDI",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 78,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwNjc",
+          "name": "RabbitMQ",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNzQ4MzY",
+        "public": false,
+        "rating": "STRONG",
+        "position": 79,
+        "skill": {
+          "id": "VjEtU2tpbGwtODEwMzY",
+          "name": "SQL",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNzc1NjI",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 80,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwNTY",
+          "name": "Architecture",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNzc1NjM",
+        "public": false,
+        "rating": "STRONG",
+        "position": 81,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NDA",
+          "name": "Amazon Web Services (AWS)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNzc1NjQ",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 82,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzgzMjM",
+          "name": "Technical Leadership",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNzc1Njg",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 83,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwMTE",
+          "name": "Full-stack",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxNzc1Njk",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 84,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5Njc",
+          "name": "Redux",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxOTA4MzU",
+        "public": false,
+        "rating": "COMPETENT",
+        "position": 85,
+        "skill": {
+          "id": "VjEtU2tpbGwtMjgxOQ",
+          "name": "Vercel",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxOTA4NDY",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 86,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NDg",
+          "name": "GitHub",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxOTA4NDc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 87,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTY",
+          "name": "JSON",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxOTE1OTI",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 88,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxMjc",
+          "name": "Django REST Framework",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQxOTE1OTM",
+        "public": false,
+        "rating": "STRONG",
+        "position": 89,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NzM",
+          "name": "Heroku",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDM5NDA",
+        "public": false,
+        "rating": "STRONG",
+        "position": 90,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MTc",
+          "name": "PHP",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDQ1MTY",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 91,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MjQ",
+          "name": "HTML5",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDcwMzk",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 92,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc0MDg",
+          "name": "RxJS",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDcwNDA",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 93,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwNTQ",
+          "name": "Design Patterns",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDcwNDE",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 94,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NDQ",
+          "name": "REST",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDcwNDI",
+        "public": false,
+        "rating": "STRONG",
+        "position": 95,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTI",
+          "name": "Test-driven Development (TDD)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDcwNzA",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 96,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcxNTE",
+          "name": "Google Cloud Platform (GCP)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDcxMzE",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 98,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5ODM",
+          "name": "Azure",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 7,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMDcxNjU",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 99,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwOTE",
+          "name": "REST APIs",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 6,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMTEyNjQ",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 100,
+        "skill": {
+          "id": "VjEtU2tpbGwtMjMwNjE5",
+          "name": "Redux RTK",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMTEyNjU",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 101,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5Nzk",
+          "name": "Unit Testing",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjExNTg",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 102,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NTk",
+          "name": "Scrum",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjExNTk",
+        "public": false,
+        "rating": "STRONG",
+        "position": 103,
+        "skill": {
+          "id": "VjEtU2tpbGwtNDY3NzA",
+          "name": "WASM",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjM3MDc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 104,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5NjI",
+          "name": "Functional Programming",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 5,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjg4ODc",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 105,
+        "skill": {
+          "id": "VjEtU2tpbGwtOTgzMzE",
+          "name": "API Integration",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 3,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjg4ODg",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 106,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc5NTI",
+          "name": "Serverless Architecture",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjg4ODk",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 107,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc1Mzc",
+          "name": "Twilio",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjg4OTA",
+        "public": false,
+        "rating": "STRONG",
+        "position": 108,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzcwNTI",
+          "name": "GraphQL",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 1,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMjg4OTE",
+        "public": false,
+        "rating": "STRONG",
+        "position": 109,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzgxNjU",
+          "name": "Zapier",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 2,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMzMxMjI",
+        "public": false,
+        "rating": "STRONG",
+        "position": 110,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzc2OTA",
+          "name": "Internet of Things (IoT)",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      },
+      {
+        "experience": 4,
+        "id": "VjEtUHJvZmlsZVNraWxsU2V0LTQyMzMxMjM",
+        "public": false,
+        "rating": "EXPERT",
+        "position": 111,
+        "skill": {
+          "id": "VjEtU2tpbGwtMzY5MTY",
+          "name": "MySQL",
+          "__typename": "Skill"
+        },
+        "__typename": "ProfileSkillSet"
+      }
+    ],
+    "__typename": "ProfileSkillSetConnection"
+  },
+  "recommendations": {
+    "nodes": [],
+    "__typename": "RecommendationInterfaceConnection"
+  },
+  "__typename": "Profile",
+  "advancedProfileWizardStatus": "FINISHED",
+  "travelVisas": {
+    "nodes": [
+      {
+        "id": "VjEtVHJhdmVsVmlzYS0xNDU0OA",
+        "country": {
+          "id": "VjEtQ291bnRyeS0xMDI",
+          "name": "India",
+          "__typename": "Country"
+        },
+        "visaType": "Citizenship",
+        "expiryDate": null,
+        "__typename": "TravelVisa"
+      }
+    ],
+    "__typename": "TravelVisaConnection"
+  },
+  "customRequirements": {
+    "backgroundCheck": true,
+    "drugTest": true,
+    "timeTrackingTools": false,
+    "__typename": "CustomRequirements"
+  },
+  "basicInfoIndustries": {
+    "nodes": [],
+    "__typename": "IndustryConnection"
+  },
+  "profileCompletion": {
+    "basicInformation": 100,
+    "certificationItemsCount": 3,
+    "educationItemsCount": 1,
+    "employmentItems": 100,
+    "headshot": 100,
+    "overall": 100,
+    "portfolioItems": 100,
+    "skills": 100,
+    "timezone": 100,
+    "__typename": "ProfileCompletion"
+  },
+  "skillsReadiness": {
+    "isExpertProficiencyCountSatisfied": true,
+    "isHighlightedItemsCountAndExperienceSatisfied": true,
+    "isItemsCountSatisfied": true,
+    "isProficiencyNotSetCountSatisfied": true,
+    "isProgrammingLanguageSatisfied": true,
+    "__typename": "SkillsReadiness"
+  },
+  "submitAvailable": true,
+  "profileReadiness": {
+    "isPhotoResolutionSatisfied": true,
+    "isBasicInfoSatisfied": true,
+    "isEmploymentsCountSatisfied": true,
+    "isSkillValidationsSatisfied": true,
+    "isPortfolioItemsCountSatisfied": true,
+    "isWorkingHoursSatisfied": true,
+    "__typename": "ProfileReadiness"
+  }
+}
